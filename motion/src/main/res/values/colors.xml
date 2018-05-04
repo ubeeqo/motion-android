@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main">#55C4D0</color>
+    <color name="main_light">#D5F4F7</color>
+    <color name="main_dark">#278B96</color>
+
+    <color name="secondary">#375573</color>
+    <color name="secondary_light">#CAD8E6</color>
+    <color name="secondary_dark">#19334D</color>
+
+    <color name="danger">#F15A6D</color>
+    <color name="danger_light">#FFC4CC</color>
+    <color name="danger_dark">#B8283B</color>
+
+    <color name="success">#6EC190</color>
+    <color name="success_light">#D5F5E2</color>
+    <color name="success_dark">#2B754A</color>
+
+    <color name="alert">#FFC845</color>
+    <color name="alert_light">#FFE9B5</color>
+    <color name="alert_dark">#9D6F00</color>
+
+    <color name="ink">#333333</color>
+    <color name="ink_light">#999999</color>
+    <color name="ink_lightest">#BBBBBB</color>
+    <color name="ground">#D4D4D4</color>
+    <color name="ground_light">#E3E3E3</color>
+    <color name="ground_lightest">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- DEV colors -->
+    <color name="grey_background">#F8F8F8</color>
+    <color name="white_ripple">#10000000</color>
+    <color name="dialog_background">#8C333333</color>
+</resources>

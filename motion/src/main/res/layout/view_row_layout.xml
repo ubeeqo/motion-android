@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/content_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_action_grey_stroke"
+    android:padding="@dimen/default_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/rl_option_container"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_row_header"
+            style="@style/XsRegularCapsInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Personal information" />
+
+        <TextView
+            android:id="@+id/tv_row_title"
+            style="@style/LRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            tools:text="Federico Perez" />
+
+        <TextView
+            android:id="@+id/tv_row_subtitle"
+            style="@style/MRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            tools:text="fede@maicrosof.com" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_option_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp">
+
+        <ImageView
+            android:id="@+id/iv_row_chevron"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_chevron" />
+
+        <CheckBox
+            android:id="@+id/cb_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

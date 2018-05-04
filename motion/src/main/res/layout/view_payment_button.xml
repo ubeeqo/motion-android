@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_payment_method_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_payment_button"
+        android:padding="@dimen/default_margin">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_right_margin"
+            android:scaleType="center"
+            android:visibility="gone"
+            tools:src="@drawable/ic_credit_card"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_payment_method"
+            style="@style/MSemibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_chevron"
+            android:layout_toRightOf="@id/iv_icon"
+            android:gravity="left"
+            tools:text="**** 1234" />
+
+        <ImageView
+            android:id="@+id/iv_chevron"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_chevron" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        style="@style/SRegularDanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        tools:text="Psst! You need to fill this up!"
+        tools:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion parent.ext.compileSdkVersion
+    buildToolsVersion parent.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion parent.ext.minSdkVersion
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildToolsVersion '27.0.3'
+
+}
+
+dependencies {
+
+    // Support
+    implementation "com.android.support:design:$supportVersion"
+
+    // callygraphy
+    implementation "uk.co.chrisjenx:calligraphy:$calligraphy"
+
+    // Gif
+    implementation "pl.droidsonroids.gif:android-gif-drawable:$gif"
+}

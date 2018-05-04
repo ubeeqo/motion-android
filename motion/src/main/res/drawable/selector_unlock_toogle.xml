@@ -1,0 +1,12 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- DISABLED -->
+    <item android:drawable="@drawable/ic_unlock_disabled" android:state_enabled="false" />
+
+    <!-- PRESSED -->
+    <item android:drawable="@drawable/ic_unlock_disabled" android:state_pressed="true" />
+
+    <!-- DEFAULT -->
+    <item android:drawable="@drawable/ic_unlock" />
+
+</selector>

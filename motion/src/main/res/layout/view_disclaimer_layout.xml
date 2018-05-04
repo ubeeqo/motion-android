@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/content_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_disclaimer"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_option_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/ic_alert" />
+
+    <TextView
+        android:id="@+id/tv_disclaime_text"
+        style="@style/XsRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/iv_option_icon"
+        tools:text="This parking will be closed. Find the open parking option on the Drive screen." />
+
+</RelativeLayout>

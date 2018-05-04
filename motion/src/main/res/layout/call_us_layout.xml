@@ -1,0 +1,40 @@
+<LinearLayout android:id="@+id/call_us_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_call_us"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/default_top_margin"
+    android:paddingLeft="@dimen/default_left_margin"
+    android:paddingRight="@dimen/default_right_margin">
+
+    <TextView
+        android:id="@+id/tv_call_us_title"
+        style="@style/SRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/call_us_view_title" />
+
+    <TextView
+        android:id="@+id/tv_call_us_subtitle"
+        style="@style/SRegularInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="*Customer service working hours:"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/bt_call_us_now"
+        style="@style/ButtonLinkMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/call_us_now_action" />
+
+</LinearLayout>

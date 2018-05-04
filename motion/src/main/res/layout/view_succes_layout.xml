@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:padding="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/iv_success_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_above="@id/ll_messages"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_thumbs_up" />
+
+    <LinearLayout
+        android:id="@+id/ll_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_success_title"
+            style="@style/XXLSemiboldWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Great! Your booking is completed!" />
+
+        <TextView
+            android:id="@+id/tv_success_subtitle"
+            style="@style/MRegularWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            tools:text="Connecting with car"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+package com.phoenix.motion.rows;
+
+import android.content.Context;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.example.motion.R;
+
+public class RowValueLayout extends LinearLayout {
+
+    //region View Binding
+    private TextView mTvHeader;
+    private TextView mTvTitle;
+    //endregion
+
+    //region Constructors and initialization
+    public RowValueLayout(Context context) {
+
+        super(context);
+        initUI();
+    }
+
+    public RowValueLayout(Context context,
+                          @Nullable AttributeSet attrs) {
+
+        super(context, attrs);
+        initUI();
+    }
+
+    private void initUI() {
+
+        LayoutInflater inflater = (LayoutInflater) getContext()
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.view_row_value_layout, this, true);
+        bindViews();
+    }
+    //endregion
+
+    private void bindViews() {
+
+        mTvHeader = findViewById(R.id.tv_row_header);
+        mTvTitle = findViewById(R.id.tv_row_title);
+    }
+
+    public void configureView(int header,
+                              String title) {
+
+        mTvHeader.setText(header);
+        mTvTitle.setText(title);
+    }
+}

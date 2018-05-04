@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/iv_waiting_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_above="@id/ll_messages"
+        app:srcCompat="@drawable/ic_alert" />
+
+    <LinearLayout
+        android:id="@+id/ll_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_waiting_title"
+            style="@style/XXLSemiboldAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="We're still validiting your license" />
+
+        <TextView
+            android:id="@+id/tv_wating_subtitle"
+            style="@style/MRegularParagraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            tools:text="One of our customer care members is validating your driver license manually. This process normally requires 30min to 2 hours."
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

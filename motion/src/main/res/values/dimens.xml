@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="xxl_font_size">32sp</dimen>
+    <dimen name="xl_font_size">24sp</dimen>
+    <dimen name="l_font_size">20sp</dimen>
+    <dimen name="m_font_size">16sp</dimen>
+    <dimen name="s_font_size">14sp</dimen>
+    <dimen name="xs_font_size">12sp</dimen>
+
+    <dimen name="xxl_line_height">4dp</dimen>
+    <dimen name="xl_line_height">4dp</dimen>
+    <dimen name="l_line_height">4dp</dimen>
+    <dimen name="m_line_height">4dp</dimen>
+    <dimen name="s_line_height">4dp</dimen>
+    <dimen name="xs_line_height">4dp</dimen>
+
+    <dimen name="m_paragraph_line_height">6dp</dimen>
+    <dimen name="s_paragraph_line_height">6dp</dimen>
+
+    <dimen name="rounded_container_radius">4dp</dimen>
+    <dimen name="secondary_button_radius">4dp</dimen>
+    <dimen name="booking_toogle_radius">100dp</dimen>
+
+    <dimen name="map_bottom_sheet_date_picker_initial_peak">50dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_top_margin">16dp</dimen>
+    <dimen name="default_left_margin">16dp</dimen>
+    <dimen name="default_right_margin">16dp</dimen>
+    <dimen name="default_bottom_margin">16dp</dimen>
+
+</resources>

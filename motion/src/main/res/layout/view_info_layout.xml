@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_margin">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/ll_messages"
+        android:src="@drawable/loader_ellipse" />
+
+    <LinearLayout
+        android:id="@+id/ll_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_info_title"
+            style="@style/XXLSemiboldSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Oops! It looks like it is rush hour" />
+
+        <TextView
+            android:id="@+id/tv_info_subtitle"
+            style="@style/MRegularParagraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="This is taking longer than expected. Thanks for your patience." />
+
+    </LinearLayout>
+
+</RelativeLayout>

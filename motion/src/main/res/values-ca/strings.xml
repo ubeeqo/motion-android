@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Motion</string>
+
+    <!-- Date Picker Layout -->
+    <string name="date_picker_button_tab_0">Establir Inici</string>
+    <string name="date_picker_button_tab_1">Fixar finalització</string>
+    <string name="date_picker_tab_0_title">Des de</string>
+    <string name="date_picker_tab_1_title">Fins a</string>
+
+    <!-- Call us layout -->
+    <string name="call_us_view_title">Necessites ajuda? Truca\'ns i et donarem un cop de mà.</string>
+    <string name="call_us_now_action">Truca\'ns ara</string>
+
+    <!-- Unsuccess Layout-->
+    <string name="unsuccess_title">¡Ups! Alguna cosa ha fallat</string>
+    <string name="unsuccess_action_try_again">Tornar-ho a provar</string>
+</resources>

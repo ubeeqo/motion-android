@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region TEXTS-->
+
+    <style name="FontRegular">
+        <item name="fontPath">fonts/ProximaNovaSoft-Regular.otf</item>
+    </style>
+
+    <style name="FontSemibold">
+        <item name="fontPath">fonts/ProximaNovaSoft-Semibold.otf</item>
+    </style>
+
+    <!-- XS Text Styles -->
+
+    <style name="XsRegular" parent="FontRegular">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
+    <style name="XsRegularCapsInfo" parent="FontRegular">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/ink_light</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="XsRegularCapsDisabled" parent="FontRegular">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/ink_lightest</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="XsSemibold" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
+    <style name="XsSemiboldDisabled" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/ink_lightest</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
+    <style name="XsSemiboldMain" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
+    <style name="XsSemiboldMainPressed" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/main_dark</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
+    <style name="XsSemiboldWhite" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
+    <style name="XsRegularInfo" parent="FontRegular">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/ink_light</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
+    <!-- S Text Styles -->
+
+    <style name="SRegular" parent="FontRegular">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SRegularParagraph" parent="FontRegular">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/s_paragraph_line_height</item>
+    </style>
+
+    <style name="SRegularDanger" parent="FontRegular">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SRegularInfo" parent="FontRegular">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/ink_light</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SRegularWhite" parent="FontRegular">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SRegularSecondary" parent="FontRegular">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SSemibold" parent="FontSemibold">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SSemiboldDanger" parent="FontSemibold">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SSemiboldMain" parent="FontSemibold">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SSemiboldMainPressed" parent="FontSemibold">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/main_dark</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SSemiboldMainDisabled" parent="FontSemibold">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/main_light</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <style name="SSemiboldWhite" parent="FontSemibold">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
+    <!-- M Text Styles -->
+
+    <style name="MRegular" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MRegularParagraph" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/m_paragraph_line_height</item>
+    </style>
+
+    <style name="MRegularDanger" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MRegularInfo" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/ink_light</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MRegularDisabled" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/ink_lightest</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MRegularMain" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MRegularWhite" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MSemiboldSecondary" parent="FontSemibold">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MSemibold" parent="FontSemibold">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MSemiboldInfo" parent="FontSemibold">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/ink_light</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MSemiboldDisabled" parent="FontSemibold">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/ink_lightest</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MSemiboldWhite" parent="FontSemibold">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MSemiboldMain" parent="FontSemibold">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MSemiboldDanger" parent="FontSemibold">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+    </style>
+
+    <style name="MRegularParagraphWhite" parent="FontRegular">
+        <item name="android:textSize">@dimen/m_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/m_paragraph_line_height</item>
+    </style>
+    <!-- L Text Styles -->
+
+    <style name="LRegular" parent="FontRegular">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
+    <style name="LRegularDanger" parent="FontRegular">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
+    <style name="LRegularInfo" parent="FontRegular">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/ink_light</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
+    <style name="LRegularMain" parent="FontRegular">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
+    <style name="LRegularDisabled" parent="FontRegular">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/ink_lightest</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
+    <style name="LSemibold" parent="FontSemibold">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
+    <style name="LSemiboldWhite" parent="FontSemibold">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
+    <!--  XL Text Styles-->
+
+    <style name="XLSemibold" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xl_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/xl_line_height</item>
+    </style>
+
+    <style name="XLSecondary" parent="FontRegular">
+        <item name="android:textSize">@dimen/xl_font_size</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <!-- XXL Text Styles -->
+
+    <style name="XXLSemibold" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xxl_font_size</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
+    </style>
+
+    <style name="XXLSemiboldDanger" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xxl_font_size</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
+    </style>
+
+    <style name="XXLSemiboldAlert" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xxl_font_size</item>
+        <item name="android:textColor">@color/alert</item>
+        <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
+    </style>
+
+    <style name="XXLSemiboldWhite" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xxl_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
+    </style>
+
+    <style name="XXLSemiboldSecondary" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xxl_font_size</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
+    </style>
+
+    <!--endregion-->
+
+    <!--region BUTTONS-->
+
+    <style name="ButtonPrimaryFullWidth" parent="@style/MSemiboldWhite">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/selector_primary_button</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonPrimaryFullWidthLight" parent="@style/MSemiboldSecondary">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/selector_primary_button_light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:textColor">@color/text_color_selector_primary_button_light</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonSecondary" parent="@style/MSemiboldWhite">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/selector_secondary_button</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonSecondaryDark" parent="@style/MRegular">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/selector_secondary_button_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:textColor">@color/text_color_selector_secondary_button_dark</item>
+    </style>
+
+    <style name="ButtonSecondaryFullWidth" parent="@style/MSemiboldMain">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/selector_secondary_fullwidth</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonLinkMain" parent="@style/SSemiboldMain">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/text_color_selector_button_link_main</item>
+    </style>
+
+    <style name="ButtonLinkMainNoPadding" parent="@style/SSemiboldMain">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_selector_button_link_main</item>
+    </style>
+
+    <style name="ButtonLinkWhite" parent="@style/SSemiboldWhite">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/text_color_selector_button_link_white</item>
+    </style>
+
+    <style name="ButtonLinkBlack" parent="@style/SSemibold">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/text_color_selector_button_link_black</item>
+    </style>
+
+    <!--endregion-->
+
+    <!--region TOGGLES-->
+
+    <style name="BookingToogle" parent="@style/XsSemiboldMain">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:minWidth">180dp</item>
+        <item name="android:background">@drawable/selector_booking_toogle</item>
+        <item name="android:textColor">@color/text_color_selector_button_link_main</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!--endregion-->
+
+    <!--region DIALOGS-->
+    <style name="MotionInputDialog" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:windowTitleStyle">@style/LSemibold</item>
+        <item name="android:textAppearance">@style/LSemibold</item>
+        <item name="android:textAppearanceButton">@style/ButtonLinkMain</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogFullScreen">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <!--endregion-->
+
+    <!--region INPUTTEXTLAYOUT-->
+    <style name="MotionInputTextLayout">
+        <item name="colorAccent">@color/ink_light</item>
+        <item name="colorControlNormal">@color/ink_light</item>
+        <item name="colorControlActivated">@color/ink_light</item>
+    </style>
+    <!--endregion-->
+
+</resources>

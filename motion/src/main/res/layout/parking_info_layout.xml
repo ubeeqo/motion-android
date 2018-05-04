@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_parking_info_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/background_white_stroke_grey"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/parking_info_separator"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_parking_name"
+            style="@style/SRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            tools:text="Parking BSM de la France" />
+
+        <TextView
+            android:id="@+id/tv_parking_address"
+            style="@style/SRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_parking_name"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:visibility="gone"
+            tools:text="Parking BSM de la France" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/parking_info_separator"
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@id/iv_parking_info"
+        android:background="@color/ground" />
+
+    <ImageView
+        android:id="@+id/iv_parking_info"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_info" />
+
+</RelativeLayout>
