@@ -6,18 +6,22 @@ import android.content.Intent;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.motion.R;
 import com.phoenix.motion.Configurations;
+import com.squareup.picasso.Picasso;
 
 public class SuccessView extends RelativeLayout {
 
     private ImageView mIvImage;
     private TextView mTvTitle;
     private TextView mTvSubtitle;
+    private ImageView mIvZone;
+    private TextView mBtGotIt;
 
     public SuccessView(Context context) {
 
@@ -50,6 +54,8 @@ public class SuccessView extends RelativeLayout {
         mIvImage = findViewById(R.id.iv_success_image);
         mTvTitle = findViewById(R.id.tv_success_title);
         mTvSubtitle = findViewById(R.id.tv_success_subtitle);
+        mIvZone = findViewById(R.id.iv_zone);
+        mBtGotIt = findViewById(R.id.bt_got_it);
     }
 
     public void setImage(int resourceId) {
@@ -71,6 +77,28 @@ public class SuccessView extends RelativeLayout {
 
         mTvSubtitle.setText(getContext().getString(resourceId));
         mTvSubtitle.setVisibility(VISIBLE);
+    }
+
+    public void setImageZone(String imageUrl) {
+
+        Picasso.get().load(imageUrl).into(mIvZone);
+        mIvZone.setVisibility(View.VISIBLE);
+    }
+
+    public void setGotItButton(final Activity currentActivity,
+                               final Intent resultIntent,
+                               String text) {
+
+        mBtGotIt.setText(text);
+        mBtGotIt.setVisibility(View.VISIBLE);
+        mBtGotIt.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                currentActivity.setResult(Activity.RESULT_OK, resultIntent);
+                currentActivity.finish();
+            }
+        });
     }
 
     public void showAndStartActivity(final Activity currentActivity, final Intent nextActivity) {
@@ -128,5 +156,10 @@ public class SuccessView extends RelativeLayout {
     public void hide() {
 
         setVisibility(GONE);
+    }
+
+    public void show() {
+
+        setVisibility(VISIBLE);
     }
 }

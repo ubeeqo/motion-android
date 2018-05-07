@@ -33,4 +33,7 @@
     <color name="grey_background">#F8F8F8</color>
     <color name="white_ripple">#10000000</color>
     <color name="dialog_background">#8C333333</color>
+    <color name="background_zone_status_danger">#FFC4CC</color>
+    <color name="background_zone_status_alert">#FFF4D7</color>
+    <color name="background_zone_status_success">#CAE8D6</color>
 </resources>

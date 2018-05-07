@@ -40,6 +40,24 @@
             tools:text="Connecting with car"
             tools:visibility="visible" />
 
+        <ImageView
+            android:id="@+id/iv_zone"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="@dimen/default_top_margin"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:src="@drawable/selector_info_button"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/bt_got_it"
+            style="@style/ButtonSecondaryFullWidth"
+            android:layout_marginTop="@dimen/default_top_margin"
+            android:visibility="gone"
+            tools:text="OK, GOT IT"
+            tools:visibility="visible" />
+
     </LinearLayout>
 
 </RelativeLayout>

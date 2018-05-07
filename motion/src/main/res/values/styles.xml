@@ -101,6 +101,12 @@
         <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
     </style>
 
+    <style name="SRegularMain" parent="FontRegular">
+        <item name="android:textSize">@dimen/s_font_size</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:lineSpacingExtra">@dimen/s_line_height</item>
+    </style>
+
     <style name="SRegularSecondary" parent="FontRegular">
         <item name="android:textSize">@dimen/s_font_size</item>
         <item name="android:textColor">@color/secondary</item>
@@ -144,7 +150,6 @@
     </style>
 
     <!-- M Text Styles -->
-
     <style name="MRegular" parent="FontRegular">
         <item name="android:textSize">@dimen/m_font_size</item>
         <item name="android:textColor">@color/ink</item>
@@ -293,6 +298,12 @@
 
     <!-- XXL Text Styles -->
 
+    <style name="XXLSemiboldMain" parent="FontSemibold">
+        <item name="android:textSize">@dimen/xxl_font_size</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
+    </style>
+
     <style name="XXLSemibold" parent="FontSemibold">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/ink</item>
@@ -330,6 +341,18 @@
     <style name="ButtonPrimaryFullWidth" parent="@style/MSemiboldWhite">
         <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_primary_button</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonPrimaryFullWidthRed" parent="@style/MSemiboldWhite">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/selector_primary_button_red</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingBottom">12dp</item>
@@ -419,6 +442,14 @@
         <item name="android:textColor">@color/text_color_selector_button_link_black</item>
     </style>
 
+    <style name="ButtonLinkRed" parent="@style/SSemiboldDanger">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/text_color_selector_button_link_red</item>
+    </style>
+
     <!--endregion-->
 
     <!--region TOGGLES-->
@@ -459,5 +490,25 @@
         <item name="colorControlActivated">@color/ink_light</item>
     </style>
     <!--endregion-->
+
+    <!-- ============ TABS ============ -->
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/main</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">@color/white</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/main</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="fontPath">fonts/ProximaNovaSoft-Regular.otf</item>
+        <!--<item name="android:fontFamily">@font/proxima_nova_soft_regular</item>-->
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
 
 </resources>

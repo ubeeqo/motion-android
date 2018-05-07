@@ -54,10 +54,11 @@ public class ParkingInfoLayout extends LinearLayout {
                      String parkingUuid,
                      String name,
                      String displayAddress,
-                     String address) {
+                     String address,
+                     boolean geofence) {
 
         mListener = listener;
-        setClickListeners(parkingUuid);
+        setClickListeners(parkingUuid, geofence);
         setParkingAddress(name, displayAddress, address);
     }
 
@@ -68,13 +69,15 @@ public class ParkingInfoLayout extends LinearLayout {
         mRlParkingInfoLayout = findViewById(R.id.rl_parking_info_layout);
     }
 
-    private void setClickListeners(final String parkingUuid) {
+    private void setClickListeners(final String parkingUuid,
+                                   final boolean geofence) {
 
         mRlParkingInfoLayout.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                mListener.onParkingInfoClick(parkingUuid);
+                mListener.onParkingInfoClick(parkingUuid,
+                        geofence);
             }
         });
     }
