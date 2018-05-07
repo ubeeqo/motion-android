@@ -1,0 +1,43 @@
+<RelativeLayout android:id="@+id/rl_zone_status_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_zone_status_danger"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_status_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        tools:src="@drawable/ic_alert" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/iv_status_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/SSemibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Delayed vehicle" />
+
+        <TextView
+            android:id="@+id/tv_status_info"
+            style="@style/SRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            tools:text="Our prior user is being delayed. Please call us for help"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>
