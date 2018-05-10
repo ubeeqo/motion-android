@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:hint="DD/MM/YYYY"
+        android:background="@null"
         app:hintTextAppearance="@style/LRegularInfo" />
 
     <view
