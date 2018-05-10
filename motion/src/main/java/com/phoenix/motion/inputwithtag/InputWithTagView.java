@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import com.example.motion.R;
 
-public class InputWithTagView extends LinearLayout{
+public class InputWithTagView extends LinearLayout {
 
     //region View Binding
-   private TextView mTvHeader;
-   private EditText mEvInput;
+    private TextView mTvHeader;
+    private EditText mEtInput;
     //endregion
 
     //region Constructors and initialization
@@ -41,27 +41,41 @@ public class InputWithTagView extends LinearLayout{
 
     private void bindViews() {
 
-        mTvHeader = findViewById(R.id.date_pof_birth_header);
-        mEvInput = findViewById(R.id.date_of_birth_input);
+        mTvHeader = findViewById(R.id.tv_date_of_birth_header);
+        mEtInput = findViewById(R.id.et_date_of_birth);
+    }
+
+    public void configureView(String header,
+                              String hint) {
+
+        mTvHeader.setText(header);
+        mEtInput.setHint(hint);
     }
 
     public void configureView(int header,
-                              String hintInputEvInput) {
+                              int hint) {
 
         mTvHeader.setText(header);
-        mEvInput.setHint(hintInputEvInput);
-
+        mEtInput.setHint(hint);
     }
+
     public void setHeader(String header) {
 
         mTvHeader.setText(header);
     }
 
-    public void setHintEvInput(String hintInputEvInput) {
+    public void setHeader(int header) {
 
-        mEvInput.setText(hintInputEvInput);
+        mTvHeader.setText(header);
     }
 
+    public void setHintEvInput(String hint) {
 
+        mEtInput.setText(hint);
+    }
 
+    public void setHintEvInput(int hint) {
+
+        mEtInput.setText(hint);
+    }
 }
