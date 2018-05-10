@@ -78,4 +78,9 @@ public class InputWithTagView extends LinearLayout {
 
         mEtInput.setText(hint);
     }
+
+    public EditText getInputText() {
+
+        return mEtInput;
+    }
 }

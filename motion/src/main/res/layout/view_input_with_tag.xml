@@ -13,7 +13,6 @@
         style="@style/XsRegularInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/default_left_margin"
         tools:text="Date of birth" />
 
     <android.support.v7.widget.AppCompatEditText
@@ -21,8 +20,6 @@
         style="@style/LRegular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/default_left_margin"
-        android:layout_marginRight="@dimen/default_right_margin"
         android:layout_marginTop="4dp"
         android:hint="DD/MM/YYYY"
         app:hintTextAppearance="@style/LRegularInfo" />
@@ -30,8 +27,6 @@
     <view
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="@dimen/default_left_margin"
-        android:layout_marginRight="@dimen/default_right_margin"
         android:layout_marginTop="6dp"
         android:background="@color/ink_light" />
 
