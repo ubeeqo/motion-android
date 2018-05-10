@@ -76,12 +76,12 @@ public class InputWithTagView extends LinearLayout {
 
     public void setHintEvInput(String hint) {
 
-        mEtInput.setText(hint);
+        mEtInput.setHint(hint);
     }
 
     public void setHintEvInput(int hint) {
 
-        mEtInput.setText(hint);
+        mEtInput.setHint(hint);
     }
 
     public EditText getInputText() {
