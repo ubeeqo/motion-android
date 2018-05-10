@@ -21,11 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:hint="DD/MM/YYYY"
         android:background="@null"
+        android:hint="DD/MM/YYYY"
         app:hintTextAppearance="@style/LRegularInfo" />
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="6dp"
