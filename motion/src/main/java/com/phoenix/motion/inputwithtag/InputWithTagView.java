@@ -1,7 +1,6 @@
 package com.phoenix.motion.inputwithtag;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.EditText;
@@ -24,16 +23,22 @@ public class InputWithTagView extends LinearLayout {
     }
 
     public InputWithTagView(Context context,
-                            @Nullable AttributeSet attrs) {
+                            AttributeSet attrs) {
 
         super(context, attrs);
-        initUI();
+        inflateView();
     }
 
-    private void initUI() {
+    public InputWithTagView(Context context,
+                            AttributeSet attrs,
+                            int defStyleAttr) {
 
-        LayoutInflater inflater = (LayoutInflater) getContext()
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        super(context, attrs, defStyleAttr);
+    }
+
+    private void inflateView() {
+
+        LayoutInflater inflater = LayoutInflater.from(getContext());
         inflater.inflate(R.layout.view_input_with_tag, this, true);
         bindViews();
     }
