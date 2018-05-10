@@ -13,6 +13,11 @@ android {
 
 }
 
+repositories {
+    jcenter()
+    google()
+}
+
 dependencies {
 
     // Support
