@@ -1,10 +1,10 @@
 package model;
 
-public class ComponetModel {
+public class ComponentModel {
 
     private String name;
 
-    public ComponetModel(String name) {
+    public ComponentModel(String name) {
 
         this.name = name;
     }
