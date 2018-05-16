@@ -18,6 +18,8 @@ import com.phoenix.motion.selectorbutton.SelectorButtonView;
 import java.util.zip.Inflater;
 
 import activities.alertbox.AlertBoxActivity;
+import activities.callus.CallUsActivity;
+import activities.dialog.CustomAlertDialogActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -61,8 +63,16 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case 0:
-                Intent intent = new Intent(this, AlertBoxActivity.class);
-                startActivity(intent);
+                Intent intentAlertBox = new Intent(this, AlertBoxActivity.class);
+                startActivity(intentAlertBox);
+                break;
+            case 1:
+                Intent intentCallUs = new Intent(this, CallUsActivity.class);
+                startActivity(intentCallUs);
+                break;
+            case 2:
+                Intent intentCustomDialog = new Intent(this, CustomAlertDialogActivity.class);
+                startActivity(intentCustomDialog);
                 break;
         }
     }

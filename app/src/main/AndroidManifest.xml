@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="activities.alertbox.AlertBoxActivity" android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.alertbox.AlertBoxActivity"
+            android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.callus.CallUsActivity"
+            android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.dialog.CustomAlertDialogActivity" />
     </application>
 </manifest>
