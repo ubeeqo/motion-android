@@ -40,5 +40,6 @@
         <activity android:name="activities.rows.RowActivity" />
         <activity android:name="activities.rows.RowValueActivity" />
         <activity android:name="activities.selectorbutton.SelectorButtonActivity" />
+        <activity android:name="activities.stepper.StepperActivity" />
     </application>
 </manifest>

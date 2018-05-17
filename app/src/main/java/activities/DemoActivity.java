@@ -26,6 +26,7 @@ import activities.paymentbutton.PaymentButtonActivity;
 import activities.rows.RowActivity;
 import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
+import activities.stepper.StepperActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -132,6 +133,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 15:
                 Intent intentSelector = new Intent(this, SelectorButtonActivity.class);
                 startActivity(intentSelector);
+                break;
+            case 16:
+                Intent intentStepper = new Intent(this, StepperActivity.class);
+                startActivity(intentStepper);
                 break;
         }
     }
