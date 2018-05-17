@@ -36,5 +36,6 @@
         <activity android:name="activities.info.InfoActivity" />
         <activity android:name="activities.inputwithtag.InputWithTagActivity" />
         <activity android:name="activities.listoption.ListOptionActivity" />
+        <activity android:name="activities.paymentbutton.PaymentButtonActivity" />
     </application>
 </manifest>

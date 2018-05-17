@@ -23,6 +23,7 @@ import activities.inputwithtag.InputWithTagActivity;
 import activities.listoption.ListOptionActivity;
 import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
+import activities.paymentbutton.PaymentButtonActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -113,6 +114,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 11:
                 Intent intentListOption = new Intent(this, ListOptionActivity.class);
                 startActivity(intentListOption);
+                break;
+            case 12:
+                Intent intentPaymentButton = new Intent(this, PaymentButtonActivity.class);
+                startActivity(intentPaymentButton);
                 break;
         }
     }
