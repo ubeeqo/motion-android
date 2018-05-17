@@ -25,6 +25,7 @@ import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
 import activities.paymentbutton.PaymentButtonActivity;
 import activities.rows.RowActivity;
+import activities.rows.RowValueActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -123,6 +124,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 13:
                 Intent intentRow = new Intent(this, RowActivity.class);
                 startActivity(intentRow);
+                break;
+            case 14:
+                Intent intentRowValue = new Intent(this, RowValueActivity.class);
+                startActivity(intentRowValue);
                 break;
         }
     }

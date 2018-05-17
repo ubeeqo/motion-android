@@ -38,5 +38,6 @@
         <activity android:name="activities.listoption.ListOptionActivity" />
         <activity android:name="activities.paymentbutton.PaymentButtonActivity" />
         <activity android:name="activities.rows.RowActivity" />
+        <activity android:name="activities.rows.RowValueActivity" />
     </application>
 </manifest>
