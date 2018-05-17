@@ -28,6 +28,7 @@ import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
 import activities.stepper.StepperActivity;
 import activities.succes.SuccesActivity;
+import activities.unsuccess.UnSuccessActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -142,6 +143,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 17:
                 Intent intentSucces= new Intent(this, SuccesActivity.class);
                 startActivity(intentSucces);
+                break;
+            case 18:
+                Intent intentUnSucces= new Intent(this, UnSuccessActivity.class);
+                startActivity(intentUnSucces);
                 break;
 
         }
