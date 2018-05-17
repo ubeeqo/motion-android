@@ -10,12 +10,11 @@ import android.widget.LinearLayout;
 import com.phoenix.R;
 import com.phoenix.motion.rows.RowValueLayout;
 
-import java.util.EmptyStackException;
-
 import activities.alertbox.AlertBoxActivity;
 import activities.callus.CallUsActivity;
 import activities.dialog.CustomAlertDialogActivity;
 import activities.dialoginoutbox.DialogInputBoxActivity;
+import activities.disclaimer.DisclaimerActivity;
 import activities.divider.DividerActivity;
 import activities.emptystate.EmptyStateActivity;
 import activities.overlay.OverlayActivity;
@@ -94,6 +93,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 7:
                 Intent intentParkingInfo = new Intent(this, ParkingInfoActivity.class);
                 startActivity(intentParkingInfo);
+                break;
+            case 8:
+                Intent intentDisclamer = new Intent(this, DisclaimerActivity.class);
+                startActivity(intentDisclamer);
                 break;
         }
     }

@@ -32,5 +32,6 @@
             android:parentActivityName="activities.DemoActivity"/>
         <activity android:name="activities.parkinginfo.ParkingInfoActivity"
             android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.disclaimer.DisclaimerActivity" />
     </application>
 </manifest>
