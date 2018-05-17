@@ -46,8 +46,8 @@ public class InputWithTagView extends LinearLayout {
 
     private void bindViews() {
 
-        mTvHeader = findViewById(R.id.tv_date_of_birth_header);
-        mEtInput = findViewById(R.id.et_date_of_birth);
+        mTvHeader = findViewById(R.id.tv_header);
+        mEtInput = findViewById(R.id.et_input);
     }
 
     public void configureView(String header,

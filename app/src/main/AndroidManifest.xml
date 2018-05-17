@@ -34,5 +34,6 @@
             android:parentActivityName="activities.DemoActivity"/>
         <activity android:name="activities.disclaimer.DisclaimerActivity" />
         <activity android:name="activities.info.InfoActivity" />
+        <activity android:name="activities.inputwithtag.InputWithTagActivity" />
     </application>
 </manifest>
