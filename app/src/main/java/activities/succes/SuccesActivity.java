@@ -34,6 +34,7 @@ public class SuccesActivity extends AppCompatActivity {
         mIvZone.setVisibility(View.VISIBLE);
         mTvButton.setText("OK, GOT IT");
         mTvButton.setVisibility(View.VISIBLE);
+
     }
 
     private void bindViews() {

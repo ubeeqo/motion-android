@@ -26,6 +26,7 @@ import activities.paymentbutton.PaymentButtonActivity;
 import activities.rows.RowActivity;
 import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
+import activities.status.StatusActivity;
 import activities.stepper.StepperActivity;
 import activities.succes.SuccesActivity;
 import activities.unsuccess.UnSuccessActivity;
@@ -153,7 +154,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentWaiting = new Intent(this, WaitingActivity.class);
                 startActivity(intentWaiting);
                 break;
-
+            case 20:
+                Intent intentStatus = new Intent(this, StatusActivity.class);
+                startActivity(intentStatus);
+                break;
         }
     }
 }

@@ -44,5 +44,6 @@
         <activity android:name="activities.succes.SuccesActivity" />
         <activity android:name="activities.unsuccess.UnSuccessActivity" />
         <activity android:name="activities.waiting.WaitingActivity" />
+        <activity android:name="activities.status.StatusActivity" />
     </application>
 </manifest>
