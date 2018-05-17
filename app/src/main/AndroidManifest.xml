@@ -39,5 +39,6 @@
         <activity android:name="activities.paymentbutton.PaymentButtonActivity" />
         <activity android:name="activities.rows.RowActivity" />
         <activity android:name="activities.rows.RowValueActivity" />
+        <activity android:name="activities.selectorbutton.SelectorButtonActivity" />
     </application>
 </manifest>

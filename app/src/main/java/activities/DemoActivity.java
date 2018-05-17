@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.phoenix.R;
-import com.phoenix.motion.listoption.ListOption;
 import com.phoenix.motion.rows.RowValueLayout;
 
 import activities.alertbox.AlertBoxActivity;
@@ -26,6 +25,7 @@ import activities.parkinginfo.ParkingInfoActivity;
 import activities.paymentbutton.PaymentButtonActivity;
 import activities.rows.RowActivity;
 import activities.rows.RowValueActivity;
+import activities.selectorbutton.SelectorButtonActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -128,6 +128,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 14:
                 Intent intentRowValue = new Intent(this, RowValueActivity.class);
                 startActivity(intentRowValue);
+                break;
+            case 15:
+                Intent intentSelector = new Intent(this, SelectorButtonActivity.class);
+                startActivity(intentSelector);
                 break;
         }
     }
