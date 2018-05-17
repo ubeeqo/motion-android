@@ -18,6 +18,7 @@ import activities.dialog.CustomAlertDialogActivity;
 import activities.dialoginoutbox.DialogInputBoxActivity;
 import activities.divider.DividerActivity;
 import activities.emptystate.EmptyStateActivity;
+import activities.overlay.OverlayActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -83,6 +84,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 5:
                 Intent intentEmptyState = new Intent(this, EmptyStateActivity.class);
                 startActivity(intentEmptyState);
+                break;
+            case 6:
+                Intent intentOverlay = new Intent(this, OverlayActivity.class);
+                startActivity(intentOverlay);
                 break;
         }
     }
