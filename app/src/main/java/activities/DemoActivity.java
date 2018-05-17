@@ -27,6 +27,7 @@ import activities.rows.RowActivity;
 import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
 import activities.stepper.StepperActivity;
+import activities.succes.SuccesActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -138,6 +139,11 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentStepper = new Intent(this, StepperActivity.class);
                 startActivity(intentStepper);
                 break;
+            case 17:
+                Intent intentSucces= new Intent(this, SuccesActivity.class);
+                startActivity(intentSucces);
+                break;
+
         }
     }
 }

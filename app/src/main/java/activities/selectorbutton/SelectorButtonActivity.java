@@ -25,7 +25,7 @@ public class SelectorButtonActivity extends AppCompatActivity {
     private void fillFields() {
 
         mTvText.setText("**** 1234");
-        mTvError.setText("sst! You need to fill this up!");
+        mTvError.setText("Psst! You need to fill this up!");
     }
 
     private void bindViews() {
