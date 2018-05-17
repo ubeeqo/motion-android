@@ -13,6 +13,7 @@ import com.phoenix.motion.rows.RowValueLayout;
 import activities.alertbox.AlertBoxActivity;
 import activities.callus.CallUsActivity;
 import activities.dialog.CustomAlertDialogActivity;
+import activities.dialoginoutbox.DialogInputBoxActivity;
 import activities.divider.DividerActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
@@ -69,6 +70,8 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intentCustomDialog);
                 break;
             case 3:
+                Intent intentDialogInputBox = new Intent(this, DialogInputBoxActivity.class);
+                startActivity(intentDialogInputBox);
                 break;
             case 4:
                 Intent intentDivider = new Intent(this, DividerActivity.class);

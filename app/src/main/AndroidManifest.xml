@@ -24,5 +24,6 @@
             android:parentActivityName="activities.DemoActivity"/>
         <activity android:name="activities.divider.DividerActivity"
             android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.dialoginoutbox.DialogInputBoxActivity" />
     </application>
 </manifest>
