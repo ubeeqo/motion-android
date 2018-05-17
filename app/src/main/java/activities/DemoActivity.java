@@ -19,6 +19,7 @@ import activities.dialoginoutbox.DialogInputBoxActivity;
 import activities.divider.DividerActivity;
 import activities.emptystate.EmptyStateActivity;
 import activities.overlay.OverlayActivity;
+import activities.parkinginfo.ParkingInfoActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -60,6 +61,7 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()){
             case 0:
                 Intent intentAlertBox = new Intent(this, AlertBoxActivity.class);
@@ -88,6 +90,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 6:
                 Intent intentOverlay = new Intent(this, OverlayActivity.class);
                 startActivity(intentOverlay);
+                break;
+            case 7:
+                Intent intentParkingInfo = new Intent(this, ParkingInfoActivity.class);
+                startActivity(intentParkingInfo);
                 break;
         }
     }

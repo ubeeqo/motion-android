@@ -24,8 +24,13 @@
             android:parentActivityName="activities.DemoActivity"/>
         <activity android:name="activities.divider.DividerActivity"
             android:parentActivityName="activities.DemoActivity"/>
-        <activity android:name="activities.dialoginoutbox.DialogInputBoxActivity" />
-        <activity android:name="activities.emptystate.EmptyStateActivity" />
-        <activity android:name="activities.overlay.OverlayActivity" />
+        <activity android:name="activities.dialoginoutbox.DialogInputBoxActivity"
+            android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.emptystate.EmptyStateActivity"
+            android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.overlay.OverlayActivity"
+            android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.parkinginfo.ParkingInfoActivity"
+            android:parentActivityName="activities.DemoActivity"/>
     </application>
 </manifest>
