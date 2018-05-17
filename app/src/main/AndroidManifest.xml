@@ -43,5 +43,6 @@
         <activity android:name="activities.stepper.StepperActivity" />
         <activity android:name="activities.succes.SuccesActivity" />
         <activity android:name="activities.unsuccess.UnSuccessActivity" />
+        <activity android:name="activities.waiting.WaitingActivity" />
     </application>
 </manifest>
