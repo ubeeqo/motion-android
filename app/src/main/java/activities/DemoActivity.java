@@ -10,11 +10,14 @@ import android.widget.LinearLayout;
 import com.phoenix.R;
 import com.phoenix.motion.rows.RowValueLayout;
 
+import java.util.EmptyStackException;
+
 import activities.alertbox.AlertBoxActivity;
 import activities.callus.CallUsActivity;
 import activities.dialog.CustomAlertDialogActivity;
 import activities.dialoginoutbox.DialogInputBoxActivity;
 import activities.divider.DividerActivity;
+import activities.emptystate.EmptyStateActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -76,6 +79,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 4:
                 Intent intentDivider = new Intent(this, DividerActivity.class);
                 startActivity(intentDivider);
+                break;
+            case 5:
+                Intent intentEmptyState = new Intent(this, EmptyStateActivity.class);
+                startActivity(intentEmptyState);
                 break;
         }
     }

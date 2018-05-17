@@ -25,5 +25,7 @@
         <activity android:name="activities.divider.DividerActivity"
             android:parentActivityName="activities.DemoActivity"/>
         <activity android:name="activities.dialoginoutbox.DialogInputBoxActivity" />
+        <activity android:name="activities.emptystate.EmptyStateActivity" />
+        <activity android:name="activities.overlay.OverlayActivity" />
     </application>
 </manifest>
