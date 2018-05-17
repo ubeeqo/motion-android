@@ -21,7 +21,7 @@ public class SuccesActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_succes);
-        getSupportActionBar().setTitle(this.getClass().getSimpleName());
+        //getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindViews();
         fillFields();
     }
@@ -31,7 +31,7 @@ public class SuccesActivity extends AppCompatActivity {
         mTvTitle.setText("Great! Your booking is completed!");
         mTvSubtitle.setText("Connecting with car");
         mTvSubtitle.setVisibility(View.VISIBLE);
-        mIvZone.setBackgroundResource(R.drawable.selector_info_button);
+        mIvZone.setImageResource(R.drawable.selector_info_button);
         mIvZone.setVisibility(View.VISIBLE);
         mTvButton.setText("OK, GOT IT");
         mTvButton.setVisibility(View.VISIBLE);
