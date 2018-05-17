@@ -17,6 +17,7 @@ import activities.dialoginoutbox.DialogInputBoxActivity;
 import activities.disclaimer.DisclaimerActivity;
 import activities.divider.DividerActivity;
 import activities.emptystate.EmptyStateActivity;
+import activities.info.InfoActivity;
 import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
 import model.ComponentModel;
@@ -97,6 +98,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 8:
                 Intent intentDisclamer = new Intent(this, DisclaimerActivity.class);
                 startActivity(intentDisclamer);
+                break;
+            case 9:
+                Intent intentInfo = new Intent(this, InfoActivity.class);
+                startActivity(intentInfo);
                 break;
         }
     }
