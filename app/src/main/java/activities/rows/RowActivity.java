@@ -18,6 +18,7 @@ public class RowActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_row);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindViews();
         fillFields();
     }

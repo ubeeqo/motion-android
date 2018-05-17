@@ -16,6 +16,7 @@ public class StepperActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepper);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindView();
         fillField();
     }

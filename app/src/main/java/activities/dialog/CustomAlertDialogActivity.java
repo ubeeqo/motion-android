@@ -20,6 +20,7 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empty);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         InitDialog();
     }
 
@@ -31,6 +32,7 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
             public void onPositiveButtonClickListener() {
                 Intent intent = new Intent(getApplicationContext(), DemoActivity.class);
                 startActivity(intent);
+                finish();
             }
         };
         NeutralButtonClickListener neutralButtonClickListener = new NeutralButtonClickListener() {
@@ -38,6 +40,7 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
             public void onNeutralButtonClickListener() {
                 Intent intent = new Intent(getApplicationContext(), DemoActivity.class);
                 startActivity(intent);
+                finish();
             }
         };
         NegativeButtonClickListener negativeButtonClickListener = new NegativeButtonClickListener() {
@@ -45,6 +48,7 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
             public void onNegativeButtonClickListener() {
                 Intent intent = new Intent(getApplicationContext(), DemoActivity.class);
                 startActivity(intent);
+                finish();
             }
         };
         customAlertDialog.setTitle("Check out times");

@@ -20,6 +20,7 @@ public class StatusActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindViews();
         fillFields();
     }

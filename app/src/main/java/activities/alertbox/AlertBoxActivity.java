@@ -3,6 +3,7 @@ package activities.alertbox;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toolbar;
 
 import com.phoenix.R;
 import com.phoenix.motion.alertbox.AlertBoxView;
@@ -15,12 +16,12 @@ public class AlertBoxActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_box);
-        mAlertBoxView = findViewById(R.id.alert_box_view_demo);
-        mDangerBoxView = findViewById(R.id.danger_box_view_demo);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
+        bindViews();
         fillFieldsBox();
-
     }
 
     private void fillFieldsBox() {
@@ -30,5 +31,12 @@ public class AlertBoxActivity extends AppCompatActivity{
         mDangerBoxView.setMessage("We are still validating your license");
         mDangerBoxView.setAction("Complete it now");
     }
+
+    public void bindViews() {
+
+        mAlertBoxView = findViewById(R.id.alert_box_view_demo);
+        mDangerBoxView = findViewById(R.id.danger_box_view_demo);
+    }
+
 
 }

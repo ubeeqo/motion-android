@@ -18,6 +18,7 @@ public class SelectorButtonActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selector);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindViews();
         fillFields();
     }

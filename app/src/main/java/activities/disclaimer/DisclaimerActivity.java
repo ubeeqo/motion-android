@@ -16,6 +16,7 @@ public class DisclaimerActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disclaimer);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindViews();
         fillViews();
     }

@@ -21,6 +21,7 @@ public class SuccesActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_succes);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindViews();
         fillFields();
     }

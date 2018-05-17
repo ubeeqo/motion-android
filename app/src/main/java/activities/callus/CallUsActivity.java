@@ -18,7 +18,8 @@ public class CallUsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call_us);
-        }
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
+    }
 
 
 }

@@ -16,6 +16,7 @@ public class ListOptionActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_option);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         bindViews();
         fillFields();
     }

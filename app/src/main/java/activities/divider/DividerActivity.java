@@ -16,6 +16,7 @@ public class DividerActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empty);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
     }
 
 

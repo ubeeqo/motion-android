@@ -13,6 +13,7 @@ public class DialogInputBoxActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog_input_box);
+        getSupportActionBar().setTitle(this.getClass().getSimpleName());
     }
 
 }
