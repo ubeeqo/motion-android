@@ -37,10 +37,10 @@ public class ParkingInfoActivity extends AppCompatActivity {
 
     public void showAddres(View view) {
 
-        if(mTvAddres.getVisibility()==View.GONE) {
+        if (mTvAddres.getVisibility()==View.GONE) {
 
             mTvAddres.setVisibility(View.VISIBLE);
-        }else{
+        } else {
 
             mTvAddres.setVisibility(View.GONE);
         }

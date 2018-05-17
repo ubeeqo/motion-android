@@ -41,9 +41,11 @@ public class StatusActivity extends AppCompatActivity {
 
     public void showMessage(View view) {
 
-        if(mTvInfo.getVisibility()==View.GONE){
+        if (mTvInfo.getVisibility()==View.GONE) {
+
             mTvInfo.setVisibility(View.VISIBLE);
-        }else{
+        } else {
+
             mTvInfo.setVisibility(View.GONE);
         }
     }

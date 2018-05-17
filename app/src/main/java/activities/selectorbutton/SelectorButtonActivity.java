@@ -37,9 +37,11 @@ public class SelectorButtonActivity extends AppCompatActivity {
 
     public void showError(View view) {
 
-        if(mTvError.getVisibility() == View.GONE){
+        if (mTvError.getVisibility() == View.GONE) {
+
             mTvError.setVisibility(View.VISIBLE);
-        }else{
+        } else {
+
             mTvError.setVisibility(View.GONE);
         }
     }
