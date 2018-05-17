@@ -19,7 +19,7 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_custom_alert_dialog);
+        setContentView(R.layout.activity_empty);
         InitDialog();
     }
 

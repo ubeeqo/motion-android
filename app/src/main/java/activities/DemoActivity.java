@@ -8,18 +8,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.phoenix.R;
-import com.phoenix.motion.alertbox.AlertBoxView;
-import com.phoenix.motion.paymentbutton.PaymentButtonClickListener;
-import com.phoenix.motion.paymentbutton.PaymentButtonView;
 import com.phoenix.motion.rows.RowValueLayout;
-import com.phoenix.motion.selectorbutton.SelectorButtonClickListener;
-import com.phoenix.motion.selectorbutton.SelectorButtonView;
-
-import java.util.zip.Inflater;
 
 import activities.alertbox.AlertBoxActivity;
 import activities.callus.CallUsActivity;
 import activities.dialog.CustomAlertDialogActivity;
+import activities.divider.DividerActivity;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
@@ -73,6 +67,12 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
             case 2:
                 Intent intentCustomDialog = new Intent(this, CustomAlertDialogActivity.class);
                 startActivity(intentCustomDialog);
+                break;
+            case 3:
+                break;
+            case 4:
+                Intent intentDivider = new Intent(this, DividerActivity.class);
+                startActivity(intentDivider);
                 break;
         }
     }

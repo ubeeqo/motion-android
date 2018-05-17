@@ -20,6 +20,9 @@
             android:parentActivityName="activities.DemoActivity"/>
         <activity android:name="activities.callus.CallUsActivity"
             android:parentActivityName="activities.DemoActivity"/>
-        <activity android:name="activities.dialog.CustomAlertDialogActivity" />
+        <activity android:name="activities.dialog.CustomAlertDialogActivity"
+            android:parentActivityName="activities.DemoActivity"/>
+        <activity android:name="activities.divider.DividerActivity"
+            android:parentActivityName="activities.DemoActivity"/>
     </application>
 </manifest>
