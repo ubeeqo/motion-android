@@ -5,11 +5,11 @@
 
         <selector>
             <item android:state_selected="true">
-                <color android:color="@color/ink_light" />
+                <color android:color="@color/ground_light" />
             </item>
 
             <item android:state_activated="true">
-                <color android:color="@color/ink_light" />
+                <color android:color="@color/ground_light" />
             </item>
 
             <item>
