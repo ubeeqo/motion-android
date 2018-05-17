@@ -9,7 +9,7 @@ import com.phoenix.R;
 
 public class DisclaimerActivity extends AppCompatActivity {
 
-    TextView mTvDisclamerText;
+    private TextView mTvDisclamerText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

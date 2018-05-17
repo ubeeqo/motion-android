@@ -9,8 +9,8 @@ import com.phoenix.R;
 
 public class InfoActivity extends AppCompatActivity {
 
-    TextView mTvInfoTitle;
-    TextView mTvSubtitle;
+    private TextView mTvInfoTitle;
+    private TextView mTvSubtitle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

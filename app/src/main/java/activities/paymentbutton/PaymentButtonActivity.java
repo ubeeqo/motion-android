@@ -11,9 +11,9 @@ import com.phoenix.R;
 
 public class PaymentButtonActivity extends AppCompatActivity {
 
-    ImageView mIvIcon;
-    TextView mTvPaymentMethod;
-    TextView mTvError;
+    private ImageView mIvIcon;
+    private TextView mTvPaymentMethod;
+    private TextView mTvError;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

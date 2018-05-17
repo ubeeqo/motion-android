@@ -11,9 +11,9 @@ import com.phoenix.R;
 
 public class EmptyStateActivity extends AppCompatActivity {
 
-    TextView mTvMessage;
-    TextView mBtAction;
-    ImageView mIvIcon;
+    private TextView mTvMessage;
+    private TextView mBtAction;
+    private ImageView mIvIcon;
 
 
     @Override

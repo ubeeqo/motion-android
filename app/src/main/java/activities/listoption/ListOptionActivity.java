@@ -9,7 +9,7 @@ import com.phoenix.R;
 
 public class ListOptionActivity extends AppCompatActivity {
 
-    TextView mTvOptionText;
+    private TextView mTvOptionText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

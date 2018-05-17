@@ -9,9 +9,9 @@ import com.phoenix.R;
 
 public class RowActivity extends AppCompatActivity {
 
-    TextView mTvRowHeader;
-    TextView mTvRowTitle;
-    TextView mTvRowSubtitle;
+    private TextView mTvRowHeader;
+    private TextView mTvRowTitle;
+    private TextView mTvRowSubtitle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

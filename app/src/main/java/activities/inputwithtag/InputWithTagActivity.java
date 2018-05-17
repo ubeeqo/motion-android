@@ -11,8 +11,8 @@ import com.phoenix.R;
 
 public class InputWithTagActivity extends AppCompatActivity {
 
-    TextView mTvHeader;
-    EditText mEtInput;
+    private TextView mTvHeader;
+    private EditText mEtInput;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

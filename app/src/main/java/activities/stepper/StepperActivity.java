@@ -9,7 +9,7 @@ import com.phoenix.R;
 
 public class StepperActivity extends AppCompatActivity {
 
-    TextView mTvSeats;
+    private TextView mTvSeats;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -11,9 +11,9 @@ import com.phoenix.R;
 
 public class RowValueActivity extends AppCompatActivity {
 
-    TextView mTvRowHeader;
-    TextView mTvRowTitle;
-    ImageView mTvRowChevron;
+    private TextView mTvRowHeader;
+    private TextView mTvRowTitle;
+    private ImageView mTvRowChevron;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

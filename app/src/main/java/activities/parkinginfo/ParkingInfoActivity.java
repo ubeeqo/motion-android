@@ -10,8 +10,8 @@ import com.phoenix.R;
 
 public class ParkingInfoActivity extends AppCompatActivity {
 
-    TextView mTvParkingName;
-    TextView mTvAddres;
+    private TextView mTvParkingName;
+    private TextView mTvAddres;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

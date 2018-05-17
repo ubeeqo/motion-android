@@ -10,8 +10,8 @@ import com.phoenix.R;
 
 public class SelectorButtonActivity extends AppCompatActivity {
 
-    TextView mTvText;
-    TextView mTvError;
+    private TextView mTvText;
+    private TextView mTvError;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
