@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest package="com.phoenix"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <application
         android:allowBackup="true"
@@ -7,5 +8,81 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme">
+
+        <activity android:name="activities.DemoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="activities.alertbox.AlertBoxActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.callus.CallUsActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.dialog.CustomAlertDialogActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.divider.DividerActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.dialoginoutbox.DialogInputBoxActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.emptystate.EmptyStateActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.overlay.OverlayActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.parkinginfo.ParkingInfoActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.disclaimer.DisclaimerActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.info.InfoActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.inputwithtag.InputWithTagActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.listoption.ListOptionActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.paymentbutton.PaymentButtonActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.rows.RowActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.rows.RowValueActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.selectorbutton.SelectorButtonActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.stepper.StepperActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.succes.SuccesActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="activities.unsuccess.UnSuccessActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.waiting.WaitingActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.status.StatusActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="activities.rows.RowOneTagActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait"/>
+    </application>
 </manifest>
