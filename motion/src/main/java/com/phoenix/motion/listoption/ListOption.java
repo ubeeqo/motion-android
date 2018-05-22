@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.motion.R;
@@ -15,6 +16,7 @@ public class ListOption extends LinearLayout {
     //region View Binding
     private TextView mTvOptionText;
     private ImageView mIvOptionIcon;
+    private RelativeLayout mRlContent;
     //endregion
 
     //region Constructors and initialization
@@ -51,5 +53,19 @@ public class ListOption extends LinearLayout {
 
         mIvOptionIcon = findViewById(R.id.iv_option_icon);
         mTvOptionText = findViewById(R.id.tv_option_text);
+        mRlContent = findViewById(R.id.content_layout);
+    }
+
+    @Override
+    public void setEnabled(boolean enabled) {
+        super.setEnabled(enabled);
+
+        if (enabled) {
+
+            mRlContent.setBackgroundResource(R.drawable.background_white_feedback);
+        } else {
+
+            mRlContent.setBackgroundResource(R.drawable.background_disabled);
+        }
     }
 }
