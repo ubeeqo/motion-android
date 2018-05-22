@@ -81,5 +81,6 @@
         <activity android:name="activities.status.StatusActivity"
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name="activities.rows.RowOneTagActivity" />
     </application>
 </manifest>

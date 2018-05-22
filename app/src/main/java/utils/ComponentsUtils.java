@@ -11,7 +11,7 @@ public class ComponentsUtils {
     private String[] names = {"alert_and_danger_box","call_us","custom_alert_dialog","dialog_input_box",
             "divider_default","empty_state","overlay","parking_info", "disclaimer","info",
             "input_with_tag","list_option","payment_button","row", "row_value","selector_button",
-            "stepper","succes","unsuccess","waiting","zone_status"};
+            "stepper","succes","unsuccess","waiting","zone_status","row_one_tag"};
 
 
     public ComponentsUtils(){
