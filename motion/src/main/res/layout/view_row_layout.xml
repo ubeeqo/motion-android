@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:id="@+id/content_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/background_action_grey_stroke"
-    android:padding="@dimen/default_margin"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:padding="@dimen/default_margin">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,12 +56,12 @@
             android:layout_centerInParent="true"
             app:srcCompat="@drawable/ic_chevron" />
 
-        <CheckBox
+        <android.support.v7.widget.SwitchCompat
             android:id="@+id/cb_row"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
     </RelativeLayout>
 
