@@ -78,11 +78,14 @@ public class LicensePhotoActivity extends AppCompatActivity implements View.OnCl
                     mLPFront.showImageCheck();
                     mLPFront.hideImagePicture();
                     mLPFront.hideTag();
+                    mLPFront.showIvDl();
+                    mLPFront.setIvDl(R.drawable.img_dni);
                 } else {
 
                     mLPFront.hideImageCheck();
                     mLPFront.showImagePicture();
                     mLPFront.showTag();
+                    mLPFront.hideIvDl();
                 }
                 break;
 
@@ -92,11 +95,14 @@ public class LicensePhotoActivity extends AppCompatActivity implements View.OnCl
                     mLPSelfie.showImageCheck();
                     mLPSelfie.hideImagePicture();
                     mLPSelfie.hideTag();
+                    mLPSelfie.showIvDl();
+                    mLPSelfie.setIvDl(R.drawable.img_dni);
                 } else {
 
                     mLPSelfie.hideImageCheck();
                     mLPSelfie.showImagePicture();
                     mLPSelfie.showTag();
+                    mLPSelfie.hideIvDl();
                 }
                 break;
         }
