@@ -7,16 +7,16 @@
     android:orientation="vertical">
 
     <FrameLayout
-        android:id="@+id/fl_dl"
+        android:id="@+id/fl_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/dash_line_background"
         android:scaleType="centerCrop">
 
         <ImageView
-            android:id="@+id/iv_icon"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/iv_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:scaleType="centerCrop" />
 
@@ -29,15 +29,15 @@
             android:paddingRight="20dp">
 
             <ImageView
-                android:id="@+id/iv_icon_camera"
-                android:layout_width="44dp"
-                android:layout_height="34dp"
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                app:srcCompat="@drawable/ic_dl_back" />
+                tools:src="@drawable/ic_dl_back" />
 
             <TextView
-                android:id="@+id/tv_dl_tag"
+                android:id="@+id/tv_tag"
                 style="@style/SRegularMain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

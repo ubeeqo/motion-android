@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,8 +15,9 @@ import com.example.motion.R;
 public class LicensePhotoLayout extends LinearLayout {
 
     //region BindingViews
+    private FrameLayout mFlContent;
+    private ImageView mIvPicture;
     private ImageView mIvIcon;
-    private ImageView mIvIconCamera;
     private TextView mTvTag;
     private LinearLayout mLlCheck;
     //endregion
@@ -44,9 +46,10 @@ public class LicensePhotoLayout extends LinearLayout {
 
     private void bindViews() {
 
+        mFlContent = findViewById(R.id.fl_content);
+        mIvPicture = findViewById(R.id.iv_picture);
         mIvIcon = findViewById(R.id.iv_icon);
-        mIvIconCamera = findViewById(R.id.iv_icon_camera);
-        mTvTag = findViewById(R.id.tv_dl_tag);
+        mTvTag = findViewById(R.id.tv_tag);
         mLlCheck = findViewById(R.id.ll_check);
     }
 
@@ -86,39 +89,49 @@ public class LicensePhotoLayout extends LinearLayout {
         mTvTag.setText(tag);
     }
 
-    public void hideImagePicture() {
-
-        mIvIconCamera.setVisibility(GONE);
-    }
-
-    public void showImagePicture() {
-
-        mIvIconCamera.setVisibility(VISIBLE);
-    }
-
-    public void setImagePicture(int imagePicture) {
-
-        mIvIconCamera.setImageResource(imagePicture);
-    }
-
-    public void hideIvDl() {
+    public void hideIcon() {
 
         mIvIcon.setVisibility(GONE);
     }
 
-    public void showIvDl() {
+    public void showIcon() {
 
         mIvIcon.setVisibility(VISIBLE);
     }
 
-    public void setIvDl(int drawable) {
+    public void setIcon(int imagePicture) {
 
-        mIvIcon.setImageResource(drawable);
+        mIvIcon.setImageResource(imagePicture);
     }
 
-    public void setIvDl(Bitmap bitmap) {
+    public void hidePicture() {
 
-        mIvIcon.setImageBitmap(bitmap);
+        mIvPicture.setVisibility(GONE);
+    }
+
+    public void showPicture() {
+
+        mIvPicture.setVisibility(VISIBLE);
+    }
+
+    public void setPicture(int drawable) {
+
+        mIvPicture.setImageResource(drawable);
+    }
+
+    public void setPicture(Bitmap bitmap) {
+
+        mIvPicture.setImageBitmap(bitmap);
+    }
+
+    public void changeBorderToGreenLine() {
+
+        mFlContent.setBackgroundResource(R.drawable.green_line);
+    }
+
+    public void changeBorderToDashLine() {
+
+        mFlContent.setBackgroundResource(R.drawable.green_line);
     }
     //endregion
 }

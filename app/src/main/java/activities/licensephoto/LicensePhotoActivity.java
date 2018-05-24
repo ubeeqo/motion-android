@@ -4,9 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.FrameLayout;
 
 import com.phoenix.R;
 import com.phoenix.motion.licensephoto.LicensePhotoLayout;
@@ -32,12 +30,13 @@ public class LicensePhotoActivity extends AppCompatActivity implements View.OnCl
     private void fillFields() {
 
         mLPBack.setTag("Driving license Back");
+        mLPBack.setIcon(R.drawable.ic_dl_back);
         mLPBack.setOnClickListener(this);
         mLPFront.setTag("Driving license front");
-        mLPFront.setImagePicture(R.drawable.ic_dl_front);
+        mLPFront.setIcon(R.drawable.ic_dl_front);
         mLPFront.setOnClickListener(this);
         mLPSelfie.setTag("Selfie + Driving license");
-        mLPSelfie.setImagePicture(R.drawable.ic_selfie);
+        mLPSelfie.setIcon(R.drawable.ic_selfie);
         mLPSelfie.setOnClickListener(this);
     }
 
@@ -58,16 +57,18 @@ public class LicensePhotoActivity extends AppCompatActivity implements View.OnCl
 
                 if (mLPBack.getImageCheckVisibility() == View.GONE) {
                     mLPBack.showImageCheck();
-                    mLPBack.hideImagePicture();
+                    mLPBack.hideIcon();
                     mLPBack.hideTag();
-                    mLPBack.showIvDl();
-                    mLPBack.setIvDl(R.drawable.img_dni);
+                    mLPBack.showPicture();
+                    mLPBack.setPicture(R.drawable.img_dni);
+                    mLPBack.changeBorderToGreenLine();
                 } else {
 
                     mLPBack.hideImageCheck();
-                    mLPBack.showImagePicture();
+                    mLPBack.showIcon();
                     mLPBack.showTag();
-                    mLPBack.hideIvDl();
+                    mLPBack.hidePicture();
+                    mLPBack.changeBorderToDashLine();
                 }
                 break;
 
@@ -76,16 +77,18 @@ public class LicensePhotoActivity extends AppCompatActivity implements View.OnCl
                 if (mLPFront.getImageCheckVisibility() == View.GONE) {
 
                     mLPFront.showImageCheck();
-                    mLPFront.hideImagePicture();
+                    mLPFront.hideIcon();
                     mLPFront.hideTag();
-                    mLPFront.showIvDl();
-                    mLPFront.setIvDl(R.drawable.img_dni);
+                    mLPFront.showPicture();
+                    mLPFront.setPicture(R.drawable.img_dni);
+                    mLPFront.changeBorderToGreenLine();
                 } else {
 
                     mLPFront.hideImageCheck();
-                    mLPFront.showImagePicture();
+                    mLPFront.showIcon();
                     mLPFront.showTag();
-                    mLPFront.hideIvDl();
+                    mLPFront.hidePicture();
+                    mLPFront.changeBorderToDashLine();
                 }
                 break;
 
@@ -93,16 +96,18 @@ public class LicensePhotoActivity extends AppCompatActivity implements View.OnCl
 
                 if (mLPSelfie.getImageCheckVisibility() == View.GONE) {
                     mLPSelfie.showImageCheck();
-                    mLPSelfie.hideImagePicture();
+                    mLPSelfie.hideIcon();
                     mLPSelfie.hideTag();
-                    mLPSelfie.showIvDl();
-                    mLPSelfie.setIvDl(R.drawable.img_dni);
+                    mLPSelfie.showPicture();
+                    mLPSelfie.setPicture(R.drawable.img_dni);
+                    mLPSelfie.changeBorderToGreenLine();
                 } else {
 
                     mLPSelfie.hideImageCheck();
-                    mLPSelfie.showImagePicture();
+                    mLPSelfie.showIcon();
                     mLPSelfie.showTag();
-                    mLPSelfie.hideIvDl();
+                    mLPSelfie.hidePicture();
+                    mLPSelfie.changeBorderToDashLine();
                 }
                 break;
         }
