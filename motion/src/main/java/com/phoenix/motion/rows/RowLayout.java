@@ -3,11 +3,11 @@ package com.phoenix.motion.rows;
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.SwitchCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,7 +21,7 @@ public class RowLayout extends LinearLayout {
     private TextView mTvHeader;
     private TextView mTvTitle;
     private TextView mTvSubtitle;
-    private CheckBox mCbRow;
+    private SwitchCompat mCbRow;
     private ImageView mIvRowChevron;
     //endregion
 
@@ -119,7 +119,7 @@ public class RowLayout extends LinearLayout {
         mCbRow.setChecked(checked);
     }
 
-    public CheckBox getCheckBox() {
+    public SwitchCompat getCheckBox() {
 
         return mCbRow;
     }
