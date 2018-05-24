@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.example.motion.R;
 
-public class LicensePhotoLayout extends LinearLayout{
+public class LicensePhotoLayout extends LinearLayout {
 
     //region BindingViews
     private ImageView mIvDl;
@@ -38,8 +38,8 @@ public class LicensePhotoLayout extends LinearLayout{
     private void initUI() {
 
         LayoutInflater inflater = (LayoutInflater) getContext()
-        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.license_photo_layout,this,true);
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.license_photo_layout, this, true);
         bindViews();
     }
     //endregion
@@ -63,7 +63,7 @@ public class LicensePhotoLayout extends LinearLayout{
         mLlCheckDl.setVisibility(VISIBLE);
     }
 
-    public int getImageCheckVisibility(){
+    public int getImageCheckVisibility() {
 
         return mLlCheckDl.getVisibility();
     }
@@ -88,17 +88,17 @@ public class LicensePhotoLayout extends LinearLayout{
         mTvDlTag.setText(tag);
     }
 
-    public void hideImagePicture(){
+    public void hideImagePicture() {
 
         mIvDlIcCamera.setVisibility(GONE);
     }
 
-    public void showImagePicture(){
+    public void showImagePicture() {
 
         mIvDlIcCamera.setVisibility(VISIBLE);
     }
 
-    public void setImagePicture(int imagePicture){
+    public void setImagePicture(int imagePicture) {
 
         mIvDlIcCamera.setImageResource(imagePicture);
     }
@@ -113,11 +113,12 @@ public class LicensePhotoLayout extends LinearLayout{
         mIvDl.setVisibility(VISIBLE);
     }
 
-    public void setIvDl(int drawable){
+    public void setIvDl(int drawable) {
 
         mIvDl.setImageResource(drawable);
     }
-    public void setIvDl(Bitmap bitmap){
+
+    public void setIvDl(Bitmap bitmap) {
 
         mIvDl.setImageBitmap(bitmap);
     }
