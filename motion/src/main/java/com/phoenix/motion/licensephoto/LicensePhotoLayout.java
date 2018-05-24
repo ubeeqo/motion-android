@@ -2,11 +2,9 @@ package com.phoenix.motion.licensephoto;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -16,10 +14,10 @@ import com.example.motion.R;
 public class LicensePhotoLayout extends LinearLayout {
 
     //region BindingViews
-    private ImageView mIvDl;
-    private ImageView mIvDlIcCamera;
-    private TextView mTvDlTag;
-    private LinearLayout mLlCheckDl;
+    private ImageView mIvIcon;
+    private ImageView mIvIconCamera;
+    private TextView mTvTag;
+    private LinearLayout mLlCheck;
     //endregion
 
     //region Constructors and Initialization
@@ -46,81 +44,81 @@ public class LicensePhotoLayout extends LinearLayout {
 
     private void bindViews() {
 
-        mIvDl = findViewById(R.id.iv_dl);
-        mIvDlIcCamera = findViewById(R.id.iv_dl_ic_camera);
-        mTvDlTag = findViewById(R.id.tv_dl_tag);
-        mLlCheckDl = findViewById(R.id.ll_check_dl);
+        mIvIcon = findViewById(R.id.iv_icon);
+        mIvIconCamera = findViewById(R.id.iv_icon_camera);
+        mTvTag = findViewById(R.id.tv_dl_tag);
+        mLlCheck = findViewById(R.id.ll_check);
     }
 
     //region Components Manipulation
     public void hideImageCheck() {
 
-        mLlCheckDl.setVisibility(GONE);
+        mLlCheck.setVisibility(GONE);
     }
 
     public void showImageCheck() {
 
-        mLlCheckDl.setVisibility(VISIBLE);
+        mLlCheck.setVisibility(VISIBLE);
     }
 
     public int getImageCheckVisibility() {
 
-        return mLlCheckDl.getVisibility();
+        return mLlCheck.getVisibility();
     }
 
     public void hideTag() {
 
-        mTvDlTag.setVisibility(GONE);
+        mTvTag.setVisibility(GONE);
     }
 
     public void showTag() {
 
-        mTvDlTag.setVisibility(VISIBLE);
+        mTvTag.setVisibility(VISIBLE);
     }
 
     public void setTag(String tag) {
 
-        mTvDlTag.setText(tag);
+        mTvTag.setText(tag);
     }
 
     public void setTag(int tag) {
 
-        mTvDlTag.setText(tag);
+        mTvTag.setText(tag);
     }
 
     public void hideImagePicture() {
 
-        mIvDlIcCamera.setVisibility(GONE);
+        mIvIconCamera.setVisibility(GONE);
     }
 
     public void showImagePicture() {
 
-        mIvDlIcCamera.setVisibility(VISIBLE);
+        mIvIconCamera.setVisibility(VISIBLE);
     }
 
     public void setImagePicture(int imagePicture) {
 
-        mIvDlIcCamera.setImageResource(imagePicture);
+        mIvIconCamera.setImageResource(imagePicture);
     }
 
     public void hideIvDl() {
 
-        mIvDl.setVisibility(GONE);
+        mIvIcon.setVisibility(GONE);
     }
 
     public void showIvDl() {
 
-        mIvDl.setVisibility(VISIBLE);
+        mIvIcon.setVisibility(VISIBLE);
     }
 
     public void setIvDl(int drawable) {
 
-        mIvDl.setImageResource(drawable);
+        mIvIcon.setImageResource(drawable);
     }
 
     public void setIvDl(Bitmap bitmap) {
 
-        mIvDl.setImageBitmap(bitmap);
+        mIvIcon.setImageBitmap(bitmap);
     }
     //endregion
 }

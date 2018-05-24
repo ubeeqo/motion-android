@@ -14,7 +14,7 @@
         android:scaleType="centerCrop">
 
         <ImageView
-            android:id="@+id/iv_dl"
+            android:id="@+id/iv_icon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
@@ -29,7 +29,7 @@
             android:paddingRight="20dp">
 
             <ImageView
-                android:id="@+id/iv_dl_ic_camera"
+                android:id="@+id/iv_icon_camera"
                 android:layout_width="44dp"
                 android:layout_height="34dp"
                 android:layout_gravity="center"
@@ -50,7 +50,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ll_check_dl"
+            android:id="@+id/ll_check"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/green_background"
