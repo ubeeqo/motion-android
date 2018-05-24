@@ -20,6 +20,7 @@ import activities.divider.DividerActivity;
 import activities.emptystate.EmptyStateActivity;
 import activities.info.InfoActivity;
 import activities.inputwithtag.InputWithTagActivity;
+import activities.licensephoto.LicensePhotoActivity;
 import activities.listoption.ListOptionActivity;
 import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
@@ -184,6 +185,11 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
 
                 Intent intentRowOneTag= new Intent(this, RowOneTagActivity.class);
                 startActivity(intentRowOneTag);
+                break;
+            case 22:
+
+                Intent intentLicensePhoto= new Intent(this, LicensePhotoActivity.class);
+                startActivity(intentLicensePhoto);
                 break;
         }
     }

@@ -1,6 +1,8 @@
 package com.phoenix.motion.licensephoto;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -20,6 +22,7 @@ public class LicensePhotoLayout extends LinearLayout{
     private LinearLayout mLlCheckDl;
     //endregion
 
+    //region Constructors and Initialization
     public LicensePhotoLayout(Context context) {
 
         super(context);
@@ -39,6 +42,7 @@ public class LicensePhotoLayout extends LinearLayout{
         inflater.inflate(R.layout.license_photo_layout,this,true);
         bindViews();
     }
+    //endregion
 
     private void bindViews() {
 
@@ -48,6 +52,7 @@ public class LicensePhotoLayout extends LinearLayout{
         mLlCheckDl = findViewById(R.id.ll_check_dl);
     }
 
+    //region Components Manipulation
     public void hideImageCheck() {
 
         mLlCheckDl.setVisibility(GONE);
@@ -56,6 +61,11 @@ public class LicensePhotoLayout extends LinearLayout{
     public void showImageCheck() {
 
         mLlCheckDl.setVisibility(VISIBLE);
+    }
+
+    public int getImageCheckVisibility(){
+
+        return mLlCheckDl.getVisibility();
     }
 
     public void hideTag() {
@@ -103,4 +113,13 @@ public class LicensePhotoLayout extends LinearLayout{
         mIvDl.setVisibility(VISIBLE);
     }
 
+    public void setIvDl(int drawable){
+
+        mIvDl.setImageResource(drawable);
+    }
+    public void setIvDl(Bitmap bitmap){
+
+        mIvDl.setImageBitmap(bitmap);
+    }
+    //endregion
 }

@@ -84,5 +84,6 @@
         <activity android:name="activities.rows.RowOneTagActivity"
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name="activities.licensephoto.LicensePhotoActivity" />
     </application>
 </manifest>
