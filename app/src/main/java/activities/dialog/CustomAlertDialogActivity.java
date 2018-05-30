@@ -55,9 +55,7 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
         customAlertDialog.setMessage("Customer care working hours: Mon - Sat (8.00 to 23:00h CET)");
         customAlertDialog.setPositiveButton("Cancel", positiveButtonClickListener);
         customAlertDialog.setNeutralButton("Neutral", neutralButtonClickListener);
-        customAlertDialog.setNegativeButton("Accept",negativeButtonClickListener);
+        customAlertDialog.setNegativeButton("Accept", negativeButtonClickListener);
         customAlertDialog.show();
     }
-
-
 }

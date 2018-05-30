@@ -7,9 +7,13 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class DisclaimerActivity extends AppCompatActivity {
 
-    private TextView mTvDisclamerText;
+    @BindView(R.id.tv_disclaime_text)
+    TextView mTvDisclamerText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -17,17 +21,12 @@ public class DisclaimerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disclaimer);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillViews();
     }
 
     private void fillViews() {
 
         mTvDisclamerText.setText("This parking will be closed. Find the open parking option on the Drive screen.");
-    }
-
-    private void bindViews() {
-
-        mTvDisclamerText = findViewById(R.id.tv_disclaime_text);
     }
 }

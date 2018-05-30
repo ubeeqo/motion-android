@@ -10,7 +10,6 @@ import com.phoenix.motion.overlay.OverlayDialog;
 public class OverlayActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -20,7 +19,7 @@ public class OverlayActivity extends AppCompatActivity {
         initDialog();
     }
 
-    public void initDialog(){
+    public void initDialog() {
 
         OverlayDialog overlayDialog = new OverlayDialog(this);
         overlayDialog.setTitle("We are still validating your license...");

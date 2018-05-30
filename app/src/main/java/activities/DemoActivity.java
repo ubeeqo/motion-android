@@ -11,6 +11,8 @@ import com.phoenix.R;
 import com.phoenix.motion.rows.RowOneTagLayout;
 import com.phoenix.motion.rows.RowValueLayout;
 
+import java.sql.BatchUpdateException;
+
 import activities.alertbox.AlertBoxActivity;
 import activities.callus.CallUsActivity;
 import activities.dialog.CustomAlertDialogActivity;
@@ -34,22 +36,28 @@ import activities.stepper.StepperActivity;
 import activities.succes.SuccesActivity;
 import activities.unsuccess.UnSuccessActivity;
 import activities.waiting.WaitingActivity;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import model.ComponentModel;
 import utils.ComponentsUtils;
 
 
 public class DemoActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ComponentsUtils mComponentsUtils;
-    private LinearLayout mContentViews;
-    RowValueLayout mRowValueLayout;
 
+    private ComponentsUtils mComponentsUtils;
+    private RowValueLayout mRowValueLayout;
+
+    //region BindViews
+    @BindView(R.id.layout_content_views)
+    LinearLayout mContentViews;
+    //endregion
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo_app);
-        mContentViews = findViewById(R.id.layout_content_views);
+        ButterKnife.bind(this);
         mComponentsUtils = new ComponentsUtils();
         fillActivity();
     }

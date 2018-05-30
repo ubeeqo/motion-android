@@ -7,9 +7,13 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class ListOptionActivity extends AppCompatActivity {
 
-    private TextView mTvOptionText;
+    @BindView(R.id.tv_option_text)
+    TextView mTvOptionText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -17,17 +21,12 @@ public class ListOptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_option);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
     private void fillFields() {
 
         mTvOptionText.setText("Extend booking");
-    }
-
-    private void bindViews() {
-
-        mTvOptionText = findViewById(R.id.tv_option_text);
     }
 }

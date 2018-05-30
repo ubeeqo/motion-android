@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payment_content"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ink"
-    android:onClick="showError">
+    android:background="@color/ink">
 
     <com.phoenix.motion.paymentbutton.PaymentButtonView
         android:layout_marginTop="@dimen/default_margin"

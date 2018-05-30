@@ -9,10 +9,17 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
-public class RowOneTagActivity  extends AppCompatActivity{
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
-    private TextView mTvTitle;
-    private ImageView mIvChevron;
+public class RowOneTagActivity extends AppCompatActivity {
+
+    //region BindViews
+    @BindView(R.id.tv_row_title)
+    TextView mTvTitle;
+    @BindView(R.id.iv_row_chevron)
+    ImageView mIvChevron;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,7 +27,7 @@ public class RowOneTagActivity  extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_row_one_tag);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
@@ -28,11 +35,5 @@ public class RowOneTagActivity  extends AppCompatActivity{
 
         mTvTitle.setText("Federico Perez");
         mIvChevron.setVisibility(View.VISIBLE);
-    }
-
-    private void bindViews() {
-
-        mTvTitle = findViewById(R.id.tv_row_title);
-        mIvChevron = findViewById(R.id.iv_row_chevron);
     }
 }

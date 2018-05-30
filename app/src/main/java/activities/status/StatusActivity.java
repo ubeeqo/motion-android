@@ -9,11 +9,20 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class StatusActivity extends AppCompatActivity {
 
-    private TextView mTvStatus;
-    private TextView mTvInfo;
-    private ImageView mIvStatusIcon;
+    //region BindViews
+    @BindView(R.id.tv_status)
+    TextView mTvStatus;
+    @BindView(R.id.tv_status_info)
+    TextView mTvInfo;
+    @BindView(R.id.iv_status_icon)
+    ImageView mIvStatusIcon;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,7 +30,7 @@ public class StatusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
@@ -32,16 +41,11 @@ public class StatusActivity extends AppCompatActivity {
         mIvStatusIcon.setBackgroundResource(R.drawable.ic_alert);
     }
 
-    private void bindViews() {
-
-        mTvStatus = findViewById(R.id.tv_status);
-        mTvInfo = findViewById(R.id.tv_status_info);
-        mIvStatusIcon = findViewById(R.id.iv_status_icon);
-    }
-
+    //region OnClick
+    @OnClick(R.id.status_content)
     public void showMessage(View view) {
 
-        if (mTvInfo.getVisibility()==View.GONE) {
+        if (mTvInfo.getVisibility() == View.GONE) {
 
             mTvInfo.setVisibility(View.VISIBLE);
         } else {
@@ -49,4 +53,5 @@ public class StatusActivity extends AppCompatActivity {
             mTvInfo.setVisibility(View.GONE);
         }
     }
+    //endregion
 }

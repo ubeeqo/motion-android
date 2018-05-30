@@ -8,17 +8,24 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class WaitingActivity extends AppCompatActivity {
 
-    private TextView mTvTitle;
-    private TextView mTvSubtitle;
+    //region BindViews
+    @BindView(R.id.tv_waiting_title)
+    TextView mTvTitle;
+    @BindView(R.id.tv_wating_subtitle)
+    TextView mTvSubtitle;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waiting);
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
@@ -28,11 +35,5 @@ public class WaitingActivity extends AppCompatActivity {
         mTvSubtitle.setText("One of our customer care members is validating your driver license " +
                 "manually. This process normally requires 30min to 2 hours.");
         mTvSubtitle.setVisibility(View.VISIBLE);
-    }
-
-    private void bindViews() {
-
-        mTvTitle = findViewById(R.id.tv_waiting_title);
-        mTvSubtitle = findViewById(R.id.tv_wating_subtitle);
     }
 }

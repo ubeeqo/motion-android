@@ -8,10 +8,18 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class SelectorButtonActivity extends AppCompatActivity {
 
-    private TextView mTvText;
-    private TextView mTvError;
+    //region BindViews
+    @BindView(R.id.tv_text)
+    TextView mTvText;
+    @BindView(R.id.tv_error)
+    TextView mTvError;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -19,7 +27,7 @@ public class SelectorButtonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selector);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
@@ -29,12 +37,8 @@ public class SelectorButtonActivity extends AppCompatActivity {
         mTvError.setText("Psst! You need to fill this up!");
     }
 
-    private void bindViews() {
-
-        mTvText = findViewById(R.id.tv_text);
-        mTvError = findViewById(R.id.tv_error);
-    }
-
+    //region OnClick
+    @OnClick(R.id.selector_content)
     public void showError(View view) {
 
         if (mTvError.getVisibility() == View.GONE) {
@@ -45,4 +49,5 @@ public class SelectorButtonActivity extends AppCompatActivity {
             mTvError.setVisibility(View.GONE);
         }
     }
+    //endregion
 }
