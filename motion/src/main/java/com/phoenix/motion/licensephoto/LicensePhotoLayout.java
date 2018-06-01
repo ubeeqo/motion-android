@@ -131,7 +131,7 @@ public class LicensePhotoLayout extends LinearLayout {
 
     public void changeBorderToDashLine() {
 
-        mFlContent.setBackgroundResource(R.drawable.green_line);
+        mFlContent.setBackgroundResource(R.drawable.dash_line_background);
     }
     //endregion
 }

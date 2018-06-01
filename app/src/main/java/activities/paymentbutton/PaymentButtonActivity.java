@@ -9,11 +9,20 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class PaymentButtonActivity extends AppCompatActivity {
 
-    private ImageView mIvIcon;
-    private TextView mTvPaymentMethod;
-    private TextView mTvError;
+    //region BindViews
+    @BindView(R.id.iv_icon)
+    ImageView mIvIcon;
+    @BindView(R.id.tv_payment_method)
+    TextView mTvPaymentMethod;
+    @BindView(R.id.tv_error)
+    TextView mTvError;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,7 +30,7 @@ public class PaymentButtonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_button);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
@@ -32,13 +41,8 @@ public class PaymentButtonActivity extends AppCompatActivity {
         mTvError.setText("Psst! You need to fill this up");
     }
 
-    private void bindViews() {
-
-        mIvIcon = findViewById(R.id.iv_icon);
-        mTvPaymentMethod = findViewById(R.id.tv_payment_method);
-        mTvError = findViewById(R.id.tv_error);
-    }
-
+    //region OnClick
+    @OnClick(R.id.payment_content)
     public void showError(View view) {
 
         if (mTvError.getVisibility() == View.GONE) {
@@ -49,4 +53,5 @@ public class PaymentButtonActivity extends AppCompatActivity {
             mTvError.setVisibility(View.GONE);
         }
     }
+    //endregion
 }

@@ -8,10 +8,18 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class ParkingInfoActivity extends AppCompatActivity {
 
-    private TextView mTvParkingName;
-    private TextView mTvAddres;
+    //region BindViews
+    @BindView(R.id.tv_parking_name)
+    TextView mTvParkingName;
+    @BindView(R.id.tv_parking_address)
+    TextView mTvAddress;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -19,30 +27,25 @@ public class ParkingInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parking_info);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
     private void fillFields() {
 
         mTvParkingName.setText("Parking BSM de la France");
-        mTvAddres.setText("Ronda Sant Pere");
+        mTvAddress.setText("Ronda Sant Pere");
     }
 
-    private void bindViews() {
+    @OnClick(R.id.layout_content)
+    public void showAddress(View view) {
 
-        mTvParkingName = findViewById(R.id.tv_parking_name);
-        mTvAddres = findViewById(R.id.tv_parking_address);
-    }
+        if (mTvAddress.getVisibility() == View.GONE) {
 
-    public void showAddres(View view) {
-
-        if (mTvAddres.getVisibility()==View.GONE) {
-
-            mTvAddres.setVisibility(View.VISIBLE);
+            mTvAddress.setVisibility(View.VISIBLE);
         } else {
 
-            mTvAddres.setVisibility(View.GONE);
+            mTvAddress.setVisibility(View.GONE);
         }
     }
 }

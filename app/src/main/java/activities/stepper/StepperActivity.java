@@ -7,9 +7,15 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class StepperActivity extends AppCompatActivity {
 
-    private TextView mTvSeats;
+    //region BindViews
+    @BindView(R.id.tv_seats)
+    TextView mTvSeats;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -17,17 +23,12 @@ public class StepperActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepper);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindView();
+        ButterKnife.bind(this);
         fillField();
     }
 
     private void fillField() {
 
         mTvSeats.setText("4");
-    }
-
-    private void bindView() {
-
-        mTvSeats = findViewById(R.id.tv_seats);
     }
 }

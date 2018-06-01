@@ -3,16 +3,22 @@ package activities.alertbox;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toolbar;
 
 import com.phoenix.R;
 import com.phoenix.motion.alertbox.AlertBoxView;
 import com.phoenix.motion.dangerbox.DangerBoxView;
 
-public class AlertBoxActivity extends AppCompatActivity{
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
-    private AlertBoxView mAlertBoxView;
-    private DangerBoxView mDangerBoxView;
+public class AlertBoxActivity extends AppCompatActivity {
+
+    //region BindViews
+    @BindView(R.id.alert_box_view_demo)
+    AlertBoxView mAlertBoxView;
+    @BindView(R.id.danger_box_view_demo)
+    DangerBoxView mDangerBoxView;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,7 +26,7 @@ public class AlertBoxActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_box);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFieldsBox();
     }
 
@@ -31,12 +37,4 @@ public class AlertBoxActivity extends AppCompatActivity{
         mDangerBoxView.setMessage("We are still validating your license");
         mDangerBoxView.setAction("Complete it now");
     }
-
-    public void bindViews() {
-
-        mAlertBoxView = findViewById(R.id.alert_box_view_demo);
-        mDangerBoxView = findViewById(R.id.danger_box_view_demo);
-    }
-
-
 }
