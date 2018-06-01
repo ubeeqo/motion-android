@@ -9,12 +9,20 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class EmptyStateActivity extends AppCompatActivity {
 
-    private TextView mTvMessage;
-    private TextView mBtAction;
-    private ImageView mIvIcon;
-
+    //region BindViews
+    @BindView(R.id.tv_message)
+    TextView mTvMessage;
+    @BindView(R.id.bt_action)
+    TextView mBtAction;
+    @BindView(R.id.iv_icon)
+    ImageView mIvIcon;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,18 +30,11 @@ public class EmptyStateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empty_state);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
-    public void bindViews() {
-
-        mTvMessage = findViewById(R.id.tv_message);
-        mIvIcon = findViewById(R.id.iv_icon);
-        mBtAction = findViewById(R.id.bt_action);
-    }
-
-    public void fillFields(){
+    public void fillFields() {
 
         mTvMessage.setText("You don't have any booking right now");
         mBtAction.setText("Book now");
@@ -42,4 +43,8 @@ public class EmptyStateActivity extends AppCompatActivity {
         mIvIcon.setVisibility(View.VISIBLE);
     }
 
+    @OnClick(R.id.bt_action)
+    public void onClick() {
+
+    }
 }

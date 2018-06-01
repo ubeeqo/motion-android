@@ -9,20 +9,27 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class SuccesActivity extends AppCompatActivity {
 
-        private TextView mTvTitle;
-        private TextView mTvSubtitle;
-        private ImageView mIvZone;
-        private TextView mTvButton;
+    //region BindViews
+    @BindView(R.id.tv_success_title)
+    TextView mTvTitle;
+    @BindView(R.id.tv_success_subtitle)
+    TextView mTvSubtitle;
+    @BindView(R.id.iv_zone)
+    ImageView mIvZone;
+    @BindView(R.id.bt_got_it)
+    TextView mTvButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_succes);
-        //getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
@@ -35,13 +42,5 @@ public class SuccesActivity extends AppCompatActivity {
         mIvZone.setVisibility(View.VISIBLE);
         mTvButton.setText("OK, GOT IT");
         mTvButton.setVisibility(View.VISIBLE);
-    }
-
-    private void bindViews() {
-
-        mTvTitle = findViewById(R.id.tv_success_title);
-        mTvSubtitle = findViewById(R.id.tv_success_subtitle);
-        mIvZone = findViewById(R.id.iv_zone);
-        mTvButton = findViewById(R.id.bt_got_it);
     }
 }

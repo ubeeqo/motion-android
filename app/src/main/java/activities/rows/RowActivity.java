@@ -7,11 +7,19 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class RowActivity extends AppCompatActivity {
 
-    private TextView mTvRowHeader;
-    private TextView mTvRowTitle;
-    private TextView mTvRowSubtitle;
+    //region BindViews
+    @BindView(R.id.tv_row_header)
+    TextView mTvRowHeader;
+    @BindView(R.id.tv_row_title)
+    TextView mTvRowTitle;
+    @BindView(R.id.tv_row_subtitle)
+    TextView mTvRowSubtitle;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -19,7 +27,7 @@ public class RowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_row);
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
@@ -30,10 +38,4 @@ public class RowActivity extends AppCompatActivity {
         mTvRowSubtitle.setText("fede@maicrosof.com");
     }
 
-    private void bindViews() {
-
-        mTvRowHeader = findViewById(R.id.tv_row_header);
-        mTvRowTitle = findViewById(R.id.tv_row_title);
-        mTvRowSubtitle = findViewById(R.id.tv_row_subtitle);
-    }
 }
