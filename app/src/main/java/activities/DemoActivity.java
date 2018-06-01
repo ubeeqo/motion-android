@@ -28,6 +28,7 @@ import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
 import activities.paymentbutton.PaymentButtonActivity;
 import activities.rows.RowActivity;
+import activities.rows.RowCheckboxActivity;
 import activities.rows.RowOneTagActivity;
 import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
@@ -198,6 +199,11 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
 
                 Intent intentLicensePhoto= new Intent(this, LicensePhotoActivity.class);
                 startActivity(intentLicensePhoto);
+                break;
+            case 23:
+
+                Intent intentLicenseRowCheckbox= new Intent(this, RowCheckboxActivity.class);
+                startActivity(intentLicenseRowCheckbox);
                 break;
         }
     }

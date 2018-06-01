@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/default_right_margin"
+    android:layout_marginStart="@dimen/default_left_margin"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/SRegularInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/sw_check"
+        tools:text="I wish to receive news and partner'sspecial offers from Ubeeqo International SAS" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/sw_check"
+        style="@style/SRegularInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:theme="@style/SwitchTheme" />
+
+</RelativeLayout>
