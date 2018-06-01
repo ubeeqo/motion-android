@@ -7,10 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import com.phoenix.R;
 import com.phoenix.motion.rows.ViewRowCheckboxLayout;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class RowCheckboxActivity extends AppCompatActivity {
 
     //region BindViews
-    private ViewRowCheckboxLayout mRowCheckbox;
+    @BindView(R.id.row_checkbox)
+    ViewRowCheckboxLayout mRowCheckbox;
     //endregion
 
     @Override
@@ -18,17 +22,12 @@ public class RowCheckboxActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_row_checkbox);
-        bindViews();
+        ButterKnife.bind(this);
         fillFields();
     }
 
     private void fillFields() {
 
         mRowCheckbox.setTitle("I wish to receive news and partner's special offers from Ubeeqo International SAS");
-    }
-
-    private void bindViews() {
-
-        mRowCheckbox = findViewById(R.id.row_checkbox);
     }
 }
