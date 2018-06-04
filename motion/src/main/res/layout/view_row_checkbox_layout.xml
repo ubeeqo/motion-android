@@ -3,14 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    android:padding="@dimen/default_margin"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin">
 
     <TextView
         android:id="@+id/tv_title"
         style="@style/SRegularInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginRight="8dp"
         android:layout_toLeftOf="@+id/sw_check"
         tools:text="I wish to receive news and partner'sspecial offers from Ubeeqo International SAS" />
@@ -21,9 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="14dp"
+        android:gravity="center_vertical"
         android:theme="@style/SwitchTheme" />
-
 
 </RelativeLayout>
