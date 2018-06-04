@@ -2,11 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
 
     <com.phoenix.motion.rows.ViewRowCheckboxLayout
         android:layout_marginTop="@dimen/default_margin"
-        android:id="@+id/row_checkbox"
+        android:id="@+id/row_cb_marketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.phoenix.motion.rows.ViewRowCheckboxLayout
+        android:layout_marginTop="@dimen/default_margin"
+        android:id="@+id/row_cb_allow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

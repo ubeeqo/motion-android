@@ -57,4 +57,14 @@ public class ViewRowCheckboxLayout extends LinearLayout {
 
         return mSwCheck.isChecked();
     }
+
+    public void setCheckBox(boolean check) {
+
+        mSwCheck.setChecked(check);
+    }
+
+    public SwitchCompat getCheckBox() {
+
+        return mSwCheck;
+    }
 }
