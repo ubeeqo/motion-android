@@ -13,8 +13,10 @@ import butterknife.ButterKnife;
 public class RowCheckboxActivity extends AppCompatActivity {
 
     //region BindViews
-    @BindView(R.id.row_checkbox)
-    ViewRowCheckboxLayout mRowCheckbox;
+    @BindView(R.id.row_cb_marketing)
+    ViewRowCheckboxLayout mRowCbMarketin;
+    @BindView(R.id.row_cb_allow)
+    ViewRowCheckboxLayout mRowCbAllow;
     //endregion
 
     @Override
@@ -28,6 +30,7 @@ public class RowCheckboxActivity extends AppCompatActivity {
 
     private void fillFields() {
 
-        mRowCheckbox.setTitle("I wish to receive news and partner's special offers from Ubeeqo International SAS");
+        mRowCbMarketin.setTitle("I wish to receive news and partner's special offers from Ubeeqo International SAS");
+        mRowCbAllow.setTitle("Allow to record my activity");
     }
 }
