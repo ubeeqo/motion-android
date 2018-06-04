@@ -67,6 +67,4 @@ public class ViewRowCheckboxLayout extends LinearLayout {
 
         return mSwCheck;
     }
-
-
 }
