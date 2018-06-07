@@ -43,6 +43,11 @@ public class ViewRowCheckboxLayout extends LinearLayout {
         mSwCheck = findViewById(R.id.sw_check);
     }
 
+    public TextView getTextView(){
+
+        return mTvTitle;
+    }
+
     public void setTitle(int title) {
 
         mTvTitle.setText(title);
