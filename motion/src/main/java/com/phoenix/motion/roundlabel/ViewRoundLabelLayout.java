@@ -1,26 +1,25 @@
-package com.phoenix.motion.roundtogglebutton;
+package com.phoenix.motion.roundlabel;
 
 import android.content.Context;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.motion.R;
 
-public class ViewRoundToggleButton extends RelativeLayout {
+public class ViewRoundLabelLayout extends LinearLayout {
 
     private TextView mTvTitle;
-    private ImageView mIvToggleButton;
 
-    public ViewRoundToggleButton(Context context) {
+    public ViewRoundLabelLayout(Context context) {
 
         super(context);
         initLayout();
     }
 
-    public ViewRoundToggleButton(Context context, AttributeSet attrs) {
+    public ViewRoundLabelLayout(Context context, @Nullable AttributeSet attrs) {
 
         super(context, attrs);
         initLayout();
@@ -30,15 +29,14 @@ public class ViewRoundToggleButton extends RelativeLayout {
 
         LayoutInflater inflater = (LayoutInflater) getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.view_round_toggle_button, this, true);
+        inflater.inflate(R.layout.view_round_label, this, true);
 
         bindViews();
     }
 
     private void bindViews() {
 
-        mTvTitle = findViewById(R.id.tv_toggle_button);
-        mIvToggleButton = findViewById(R.id.iv_toggle_button);
+        mTvTitle = findViewById(R.id.tv_round_label);
     }
 
     public void setTitle(int title) {
@@ -49,10 +47,5 @@ public class ViewRoundToggleButton extends RelativeLayout {
     public void setTitle(String title) {
 
         mTvTitle.setText(title);
-    }
-
-    public void setImage(int image) {
-
-        mIvToggleButton.setImageResource(image);
     }
 }
