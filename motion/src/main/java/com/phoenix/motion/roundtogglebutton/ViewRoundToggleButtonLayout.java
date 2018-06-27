@@ -28,19 +28,19 @@ public class ViewRoundToggleButtonLayout extends RelativeLayout {
     public ViewRoundToggleButtonLayout(Context context, @Nullable AttributeSet attrs) {
 
         super(context, attrs);
-        initLayout();
 
         TypedArray arrayResurce = context.getTheme()
-                .obtainStyledAttributes(attrs,R.styleable.ViewRoundToggleButtonLayout,0,0);
+                .obtainStyledAttributes(attrs, R.styleable.ViewRoundToggleButtonLayout, 0, 0);
 
         try {
 
-            image = arrayResurce.getInteger(R.styleable.ViewRoundToggleButtonLayout_image,R.drawable.ic_add);
+            image = arrayResurce.getInteger(R.styleable.ViewRoundToggleButtonLayout_image, R.drawable.ic_add);
             title = arrayResurce.getString(R.styleable.ViewRoundToggleButtonLayout_title);
         } finally {
 
             arrayResurce.recycle();
         }
+        initLayout();
     }
 
     private void initLayout() {
