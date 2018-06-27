@@ -1,11 +1,11 @@
 <resources>
 
     <declare-styleable name="ViewRoundToggleButtonLayout">
-        <attr name="image" format="integer" />
-        <attr name="title" format="string" />
+        <attr name="imageToggleButton" format="reference" />
+        <attr name="titleToogleButton" format="string" />
     </declare-styleable>
 
     <declare-styleable name="ViewRoundLabelLayout">
-        <attr name="title" format="string" />
+        <attr name="titleLabel" format="string" />
     </declare-styleable>
 </resources>

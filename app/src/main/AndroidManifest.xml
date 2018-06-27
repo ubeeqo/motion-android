@@ -90,5 +90,6 @@
         <activity android:name="activities.rows.RowCheckboxActivity"
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name="activities.roundtogglebutton.RoundToggleButtonActivity" />
     </application>
 </manifest>

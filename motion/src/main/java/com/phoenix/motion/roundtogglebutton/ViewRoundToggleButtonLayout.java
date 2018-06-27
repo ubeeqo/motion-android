@@ -2,6 +2,7 @@ package com.phoenix.motion.roundtogglebutton;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -34,8 +35,8 @@ public class ViewRoundToggleButtonLayout extends RelativeLayout {
 
         try {
 
-            image = arrayResurce.getInteger(R.styleable.ViewRoundToggleButtonLayout_image, R.drawable.ic_add);
-            title = arrayResurce.getString(R.styleable.ViewRoundToggleButtonLayout_title);
+            image = arrayResurce.getResourceId(R.styleable.ViewRoundToggleButtonLayout_imageToggleButton, R.drawable.ic_add);
+            title = arrayResurce.getString(R.styleable.ViewRoundToggleButtonLayout_titleToogleButton);
         } finally {
 
             arrayResurce.recycle();

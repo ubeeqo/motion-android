@@ -27,6 +27,7 @@ import activities.listoption.ListOptionActivity;
 import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
 import activities.paymentbutton.PaymentButtonActivity;
+import activities.roundtogglebutton.RoundToggleButtonActivity;
 import activities.rows.RowActivity;
 import activities.rows.RowCheckboxActivity;
 import activities.rows.RowOneTagActivity;
@@ -204,6 +205,11 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
 
                 Intent intentLicenseRowCheckbox= new Intent(this, RowCheckboxActivity.class);
                 startActivity(intentLicenseRowCheckbox);
+                break;
+            case 24:
+
+                Intent intentRoundToggleButton= new Intent(this, RoundToggleButtonActivity.class);
+                startActivity(intentRoundToggleButton);
                 break;
         }
     }
