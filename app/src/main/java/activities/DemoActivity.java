@@ -27,6 +27,7 @@ import activities.listoption.ListOptionActivity;
 import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
 import activities.paymentbutton.PaymentButtonActivity;
+import activities.roundlabel.RoundLabelActivity;
 import activities.roundtogglebutton.RoundToggleButtonActivity;
 import activities.rows.RowActivity;
 import activities.rows.RowCheckboxActivity;
@@ -44,7 +45,7 @@ import model.ComponentModel;
 import utils.ComponentsUtils;
 
 
-public class DemoActivity extends AppCompatActivity implements View.OnClickListener{
+public class DemoActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private ComponentsUtils mComponentsUtils;
@@ -53,6 +54,7 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
     //region BindViews
     @BindView(R.id.layout_content_views)
     LinearLayout mContentViews;
+
     //endregion
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,12 +66,12 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
         fillActivity();
     }
 
-    public void fillActivity(){
+    public void fillActivity() {
 
-        if (mComponentsUtils.getComponentsList().size()!=0) {
+        if (mComponentsUtils.getComponentsList().size() != 0) {
             int i = 0;
-            for (ComponentModel componentModel:mComponentsUtils.getComponentsList()) {
-                mRowValueLayout  = new RowValueLayout(this);
+            for (ComponentModel componentModel : mComponentsUtils.getComponentsList()) {
+                mRowValueLayout = new RowValueLayout(this);
                 mRowValueLayout.setOnClickListener(this);
                 mRowValueLayout.setChevron();
                 mRowValueLayout.setId(i);
@@ -193,23 +195,28 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case 21:
 
-                Intent intentRowOneTag= new Intent(this, RowOneTagActivity.class);
+                Intent intentRowOneTag = new Intent(this, RowOneTagActivity.class);
                 startActivity(intentRowOneTag);
                 break;
             case 22:
 
-                Intent intentLicensePhoto= new Intent(this, LicensePhotoActivity.class);
+                Intent intentLicensePhoto = new Intent(this, LicensePhotoActivity.class);
                 startActivity(intentLicensePhoto);
                 break;
             case 23:
 
-                Intent intentLicenseRowCheckbox= new Intent(this, RowCheckboxActivity.class);
+                Intent intentLicenseRowCheckbox = new Intent(this, RowCheckboxActivity.class);
                 startActivity(intentLicenseRowCheckbox);
                 break;
             case 24:
 
-                Intent intentRoundToggleButton= new Intent(this, RoundToggleButtonActivity.class);
+                Intent intentRoundToggleButton = new Intent(this, RoundToggleButtonActivity.class);
                 startActivity(intentRoundToggleButton);
+                break;
+            case 25:
+
+                Intent intentRoundLabel = new Intent(this, RoundLabelActivity.class);
+                startActivity(intentRoundLabel);
                 break;
         }
     }

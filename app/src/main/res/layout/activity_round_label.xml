@@ -6,10 +6,11 @@
     android:background="@color/main"
     android:orientation="vertical">
 
-    <com.phoenix.motion.roundtogglebutton.ViewRoundToggleButtonLayout
+    <com.phoenix.motion.roundlabel.ViewRoundLabelLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/default_left_margin"
-        android:layout_marginTop="@dimen/default_bottom_margin"
-        app:titleToogleButton="holaas" />
+        android:layout_marginTop="@dimen/default_top_margin"
+        app:titleLabel="3 minutes" />
+
 </LinearLayout>
