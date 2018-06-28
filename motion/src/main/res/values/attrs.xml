@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RowValueLayout">
+        <attr name="header_text" format="string" />
+        <attr name="title_text" format="string" />
+        <attr name="header_style" format="reference" />
+        <attr name="title_style" format="reference" />
+    </declare-styleable>
+</resources>
