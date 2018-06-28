@@ -8,4 +8,11 @@
     <declare-styleable name="ViewRoundLabelLayout">
         <attr name="titleLabel" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="RowValueLayout">
+        <attr name="header_text" format="string" />
+        <attr name="title_text" format="string" />
+        <attr name="header_style" format="reference" />
+        <attr name="title_style" format="reference" />
+    </declare-styleable>
 </resources>
