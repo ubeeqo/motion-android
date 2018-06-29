@@ -63,7 +63,7 @@ public class ViewRoundToggleButtonLayout extends RelativeLayout {
     private void fillFields() {
 
         mTvTitle.setText(title);
-        mIvToggleButton.setImageResource(image);
+        mIvToggleButton.setBackgroundResource(image);
     }
 
     public void setTitle(int title) {
@@ -78,6 +78,6 @@ public class ViewRoundToggleButtonLayout extends RelativeLayout {
 
     public void setImage(int image) {
 
-        mIvToggleButton.setImageResource(image);
+        mIvToggleButton.setBackgroundResource(image);
     }
 }
