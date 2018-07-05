@@ -1,5 +1,7 @@
 <resources>
 
+    <attr name="header_text" format="string" />
+
     <declare-styleable name="ViewRoundToggleButtonLayout">
         <attr name="imageToggleButton" format="reference" />
         <attr name="titleToogleButton" format="string" />
@@ -10,9 +12,16 @@
     </declare-styleable>
 
     <declare-styleable name="RowValueLayout">
-        <attr name="header_text" format="string" />
+        <attr name="header_text" />
         <attr name="title_text" format="string" />
         <attr name="header_style" format="reference" />
         <attr name="title_style" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="InputWithTagView">
+        <attr name="header_text" />
+        <attr name="input_text" format="string" />
+        <attr name="input_hint" format="string" />
+        <attr name="android:inputType"/>
     </declare-styleable>
 </resources>
