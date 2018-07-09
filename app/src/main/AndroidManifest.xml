@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.phoenix"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phoenix">
 
     <application
         android:allowBackup="true"
@@ -10,85 +10,118 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="activities.DemoActivity"
+        <activity
+            android:name="activities.DemoActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="activities.alertbox.AlertBoxActivity"
+        <activity
+            android:name="activities.alertbox.AlertBoxActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.callus.CallUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.callus.CallUsActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.dialog.CustomAlertDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.dialog.CustomAlertDialogActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.divider.DividerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.divider.DividerActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.dialoginoutbox.DialogInputBoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.dialoginoutbox.DialogInputBoxActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.emptystate.EmptyStateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.emptystate.EmptyStateActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.overlay.OverlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.overlay.OverlayActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.parkinginfo.ParkingInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.parkinginfo.ParkingInfoActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.disclaimer.DisclaimerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.disclaimer.DisclaimerActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.info.InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.info.InfoActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.inputwithtag.InputWithTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.inputwithtag.InputWithTagActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.listoption.ListOptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.listoption.ListOptionActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.paymentbutton.PaymentButtonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.paymentbutton.PaymentButtonActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.rows.RowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.rows.RowActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.rows.RowValueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.rows.RowValueActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.selectorbutton.SelectorButtonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.selectorbutton.SelectorButtonActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.stepper.StepperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.stepper.StepperActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.succes.SuccesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.succes.SuccesActivity"
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name="activities.unsuccess.UnSuccessActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="activities.unsuccess.UnSuccessActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.waiting.WaitingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.waiting.WaitingActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.status.StatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.status.StatusActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.rows.RowOneTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.rows.RowOneTagActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.licensephoto.LicensePhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.licensephoto.LicensePhotoActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="activities.rows.RowCheckboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.rows.RowCheckboxActivity"
             android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.roundtogglebutton.RoundToggleButtonActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activities.roundlabel.RoundLabelActivity"
+            android:parentActivityName="activities.DemoActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>

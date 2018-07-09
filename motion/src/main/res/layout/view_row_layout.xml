@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/tv_row_title"
-            style="@style/LRegular"
+            style="@style/MRegular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -33,7 +33,7 @@
 
         <TextView
             android:id="@+id/tv_row_subtitle"
-            style="@style/MRegular"
+            style="@style/SRegular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
