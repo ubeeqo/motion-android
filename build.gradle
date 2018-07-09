@@ -33,7 +33,7 @@ allprojects {
         //Version deependencies
         supportVersion = '26.1.0'
         calligraphy = '2.3.0'
-        gif = '1.2.+'
+        gif = '1.2.12'
     }
 
     repositories {
