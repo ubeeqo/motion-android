@@ -69,6 +69,12 @@
         <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
     </style>
 
+    <style name="XsRegularInfoDanger" parent="FontRegular">
+        <item name="android:textSize">@dimen/xs_font_size</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:lineSpacingExtra">@dimen/xs_line_height</item>
+    </style>
+
     <!-- S Text Styles -->
 
     <style name="SRegular" parent="FontRegular">
@@ -475,6 +481,8 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+
+
     <style name="DialogFullScreen">
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowIsFloating">false</item>
@@ -488,6 +496,12 @@
         <item name="colorAccent">@color/ink_light</item>
         <item name="colorControlNormal">@color/ink_light</item>
         <item name="colorControlActivated">@color/ink_light</item>
+    </style>
+
+    <style name="MotionInputTextLayoutLogin">
+        <item name="colorAccent">@color/ink_light</item>
+        <item name="colorControlNormal">@color/ink_light</item>
+        <item name="colorControlActivated">@color/ink</item>
     </style>
     <!--endregion-->
 
