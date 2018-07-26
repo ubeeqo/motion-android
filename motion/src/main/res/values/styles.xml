@@ -356,6 +356,18 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="ButtonPrimaryFullWidthRectangle" parent="@style/MSemiboldWhite">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/selector_primary_button_rectangle</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
     <style name="ButtonPrimaryFullWidthRed" parent="@style/MSemiboldWhite">
         <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_primary_button_red</item>
