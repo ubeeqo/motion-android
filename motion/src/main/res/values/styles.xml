@@ -283,6 +283,12 @@
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
+    <style name="LSemiboldSecondary" parent="FontSemibold">
+        <item name="android:textSize">@dimen/l_font_size</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
+    </style>
+
     <style name="LSemiboldWhite" parent="FontSemibold">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/white</item>
