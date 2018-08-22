@@ -59,7 +59,7 @@
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="activities.inputwithtag.InputWithTagActivity"
+            android:name="activities.custominputlayout.CustomInputLayoutActivity"
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait" />
         <activity

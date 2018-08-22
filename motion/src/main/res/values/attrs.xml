@@ -18,7 +18,7 @@
         <attr name="title_style" format="reference" />
     </declare-styleable>
 
-    <declare-styleable name="InputWithTagView">
+    <declare-styleable name="CustomInputLayout">
         <attr name="header_text" />
         <attr name="input_text" format="string" />
         <attr name="input_hint" format="string" />

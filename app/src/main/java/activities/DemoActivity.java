@@ -8,10 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.phoenix.R;
-import com.phoenix.motion.rows.RowOneTagLayout;
 import com.phoenix.motion.rows.RowValueLayout;
-
-import java.sql.BatchUpdateException;
 
 import activities.alertbox.AlertBoxActivity;
 import activities.callus.CallUsActivity;
@@ -21,7 +18,7 @@ import activities.disclaimer.DisclaimerActivity;
 import activities.divider.DividerActivity;
 import activities.emptystate.EmptyStateActivity;
 import activities.info.InfoActivity;
-import activities.inputwithtag.InputWithTagActivity;
+import activities.custominputlayout.CustomInputLayoutActivity;
 import activities.licensephoto.LicensePhotoActivity;
 import activities.listoption.ListOptionActivity;
 import activities.overlay.OverlayActivity;
@@ -140,7 +137,7 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case 10:
 
-                Intent intentInputWithTag = new Intent(this, InputWithTagActivity.class);
+                Intent intentInputWithTag = new Intent(this, CustomInputLayoutActivity.class);
                 startActivity(intentInputWithTag);
                 break;
             case 11:
