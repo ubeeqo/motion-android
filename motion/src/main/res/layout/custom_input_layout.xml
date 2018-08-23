@@ -11,24 +11,24 @@
     <TextView
         android:id="@+id/tv_header"
         style="@style/XsRegularInfo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Date of birth" />
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_input"
         style="@style/LRegular"
-        android:theme="@style/MotionInputTextLayout"
-        android:imeOptions="actionDone"
-        android:minLines="1"
-        android:maxLines="1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:inputType="text"
         android:background="@null"
-        tools:hint="DD/MM/YYYY"
-        app:hintTextAppearance="@style/LRegularInfo" />
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minLines="1"
+        android:theme="@style/MotionInputTextLayout"
+        app:hintTextAppearance="@style/LRegularInfo"
+        tools:hint="DD/MM/YYYY" />
 
     <View
         android:id="@+id/v_underline"
@@ -38,12 +38,12 @@
         android:background="@color/ink_light" />
 
     <TextView
-        android:layout_marginTop="8dp"
         android:id="@+id/tv_error"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         style="@style/SRegularInfo"
-        tools:text="Wrong Message"
-        android:visibility="gone"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        tools:text="Wrong Message" />
 
 </LinearLayout>
