@@ -18,17 +18,32 @@
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_input"
         style="@style/LRegular"
+        android:theme="@style/MotionInputTextLayout"
+        android:imeOptions="actionDone"
+        android:minLines="1"
+        android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:inputType="text"
         android:background="@null"
-        android:hint="DD/MM/YYYY"
+        tools:hint="DD/MM/YYYY"
         app:hintTextAppearance="@style/LRegularInfo" />
 
     <View
+        android:id="@+id/v_underline"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="6dp"
         android:background="@color/ink_light" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SRegularInfo"
+        tools:text="Wrong Message"
+        android:visibility="gone"/>
 
 </LinearLayout>
