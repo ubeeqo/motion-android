@@ -18,6 +18,7 @@ public class AlertBoxActivity extends AppCompatActivity {
     AlertBoxView mAlertBoxView;
     @BindView(R.id.danger_box_view_demo)
     DangerBoxView mDangerBoxView;
+
     //endregion
 
     @Override
