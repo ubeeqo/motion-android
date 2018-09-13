@@ -13,15 +13,27 @@
 
     <!--region Combo A-->
 
-    <style name="NextBookRegular">
+    <style name="NextBookRegularA">
         <item name="fontPath">fonts/NEXTBook-Regular.otf</item>
     </style>
 
-    <style name="NextBookBold">
+    <style name="NextBookBoldA">
         <item name="fontPath">fonts/NEXTBook-Bold.otf</item>
     </style>
 
-    <style name="NextPosterBoldItalic">
+    <style name="NextPosterBoldItalicA">
+        <item name="fontPath">fonts/NEXTPoster-BoldItalic.otf</item>
+    </style>
+
+    <!--endregion TEXTS-->
+
+    <!--region Combo B-->
+
+    <style name="NextBookRegularB">
+        <item name="fontPath">fonts/NEXTBook-Regular.otf</item>
+    </style>
+
+    <style name="NextPosterBoldItalicB">
         <item name="fontPath">fonts/NEXTPoster-BoldItalic.otf</item>
     </style>
 
@@ -263,49 +275,49 @@
     </style>
     <!-- L Text Styles -->
 
-    <style name="LRegular" parent="NextBookRegular">
+    <style name="LRegular" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/ink</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
-    <style name="LRegularDanger" parent="NextBookRegular">
+    <style name="LRegularDanger" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/danger</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
-    <style name="LRegularInfo" parent="NextBookRegular">
+    <style name="LRegularInfo" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/ink_light</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
-    <style name="LRegularMain" parent="NextBookRegular">
+    <style name="LRegularMain" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/main</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
-    <style name="LRegularDisabled" parent="NextBookRegular">
+    <style name="LRegularDisabled" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/ink_lightest</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
-    <style name="LSemibold" parent="NextBookBold">
+    <style name="LSemibold" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/ink</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
-    <style name="LSemiboldSecondary" parent="NextBookBold">
+    <style name="LSemiboldSecondary" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/secondary</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
     </style>
 
-    <style name="LSemiboldWhite" parent="NextBookBold">
+    <style name="LSemiboldWhite" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/l_font_size</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:lineSpacingExtra">@dimen/l_line_height</item>
@@ -313,50 +325,50 @@
 
     <!--  XL Text Styles-->
 
-    <style name="XLSemibold" parent="NextBookBold">
+    <style name="XLSemibold" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/xl_font_size</item>
         <item name="android:textColor">@color/ink</item>
         <item name="android:lineSpacingExtra">@dimen/xl_line_height</item>
     </style>
 
-    <style name="XLSecondary" parent="NextBookRegular">
+    <style name="XLSecondary" parent="NextBookRegularB">
         <item name="android:textSize">@dimen/xl_font_size</item>
         <item name="android:textColor">@color/secondary</item>
     </style>
 
     <!-- XXL Text Styles -->
 
-    <style name="XXLSemiboldMain" parent="NextPosterBoldItalic">
+    <style name="XXLSemiboldMain" parent="NextPosterBoldItalicB">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/main</item>
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
     </style>
 
-    <style name="XXLSemibold" parent="NextPosterBoldItalic">
+    <style name="XXLSemibold" parent="NextPosterBoldItalicB">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/ink</item>
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
     </style>
 
-    <style name="XXLSemiboldDanger" parent="NextPosterBoldItalic">
+    <style name="XXLSemiboldDanger" parent="NextPosterBoldItalicB">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/danger</item>
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
     </style>
 
-    <style name="XXLSemiboldAlert" parent="NextPosterBoldItalic">
+    <style name="XXLSemiboldAlert" parent="NextPosterBoldItalicB">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/alert</item>
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
     </style>
 
-    <style name="XXLSemiboldWhite" parent="NextPosterBoldItalic">
+    <style name="XXLSemiboldWhite" parent="NextPosterBoldItalicB">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
     </style>
 
-    <style name="XXLSemiboldSecondary" parent="NextPosterBoldItalic">
+    <style name="XXLSemiboldSecondary" parent="NextPosterBoldItalicB">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/secondary</item>
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
