@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="main">#55C4D0</color>
-    <color name="main_light">#D5F4F7</color>
-    <color name="main_dark">#278B96</color>
+    <!--<color name="main">#55C4D0</color>-->
+    <!--<color name="main_light">#D5F4F7</color>-->
+    <!--<color name="main_dark">#278B96</color>-->
 
-    <color name="secondary">#375573</color>
-    <color name="secondary_light">#CAD8E6</color>
-    <color name="secondary_dark">#19334D</color>
+    <!--<color name="secondary">#375573</color>-->
+    <!--<color name="secondary_light">#CAD8E6</color>-->
+    <!--<color name="secondary_dark">#19334D</color>-->
 
     <color name="danger">#F15A6D</color>
     <color name="danger_light">#FFC4CC</color>
@@ -28,6 +28,20 @@
     <color name="ground_light">#E3E3E3</color>
     <color name="ground_lightest">#F2F2F2</color>
     <color name="white">#FFFFFF</color>
+
+    <!--region Test-Rebranding -->
+    <color name="main">#00C4D1</color>
+    <color name="main_light">#99E7EC</color>
+    <color name="main_dark">#01757D</color>
+
+    <color name="secondary">#3874B8</color>
+    <color name="secondary_light">#AFC7E2</color>
+    <color name="secondary_dark">#21456E</color>
+
+    <color name="accent">#FF856D</color>
+    <color name="accent_light">#FFCEC4</color>
+    <color name="accent_dark">#CC6A57</color>
+    <!--endregion ReBranding -->
 
     <!-- DEV colors -->
     <color name="background_grey">#F8F8F8</color>

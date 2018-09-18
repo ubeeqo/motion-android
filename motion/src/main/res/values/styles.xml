@@ -395,7 +395,6 @@
     <!--region BUTTONS-->
 
     <style name="ButtonPrimaryFullWidth" parent="@style/MSemiboldWhite">
-        <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_primary_button</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -407,7 +406,6 @@
     </style>
 
     <style name="ButtonPrimaryFullWidthRectangle" parent="@style/MSemiboldWhite">
-        <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_primary_button_rectangle</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -419,7 +417,6 @@
     </style>
 
     <style name="ButtonPrimaryFullWidthRed" parent="@style/MSemiboldWhite">
-        <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_primary_button_red</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -431,7 +428,6 @@
     </style>
 
     <style name="ButtonPrimaryFullWidthLight" parent="@style/MSemiboldSecondary">
-        <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_primary_button_light</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -444,7 +440,6 @@
     </style>
 
     <style name="ButtonSecondary" parent="@style/MSemiboldWhite">
-        <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_secondary_button</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -456,7 +451,6 @@
     </style>
 
     <style name="ButtonSecondaryDark" parent="@style/MRegular">
-        <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_secondary_button_dark</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -468,7 +462,6 @@
     </style>
 
     <style name="ButtonSecondaryFullWidth" parent="@style/MSemiboldMain">
-        <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/selector_secondary_fullwidth</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -480,7 +473,6 @@
     </style>
 
     <style name="ButtonLinkMain" parent="@style/SSemiboldMain">
-        <item name="android:textAllCaps">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">12dp</item>
@@ -488,14 +480,12 @@
     </style>
 
     <style name="ButtonLinkMainNoPadding" parent="@style/SSemiboldMain">
-        <item name="android:textAllCaps">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text_color_selector_button_link_main</item>
     </style>
 
     <style name="ButtonLinkWhite" parent="@style/SSemiboldWhite">
-        <item name="android:textAllCaps">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">12dp</item>
@@ -503,7 +493,6 @@
     </style>
 
     <style name="ButtonLinkBlack" parent="@style/SSemibold">
-        <item name="android:textAllCaps">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">12dp</item>
@@ -511,7 +500,6 @@
     </style>
 
     <style name="ButtonLinkRed" parent="@style/SSemiboldDanger">
-        <item name="android:textAllCaps">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">12dp</item>
