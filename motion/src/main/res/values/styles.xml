@@ -46,11 +46,11 @@
     </style>
 
     <style name="NextBookMediumC">
-        <item name="fontPath">fonts/NEXTPoster-Medium.otf</item>
+        <item name="fontPath">fonts/NEXTBook-Medium.otf</item>
     </style>
 
     <style name="NextBookLightC">
-        <item name="fontPath">fonts/NEXTPoster-Light.otf</item>
+        <item name="fontPath">fonts/NEXTBook-Light.otf</item>
     </style>
 
     <!--endregion Combo B-->
