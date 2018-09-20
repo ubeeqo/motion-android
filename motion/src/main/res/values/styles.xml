@@ -3,13 +3,13 @@
 
     <!--region TEXTS-->
 
-    <style name="FontRegular">
-        <item name="fontPath">fonts/ProximaNovaSoft-Regular.otf</item>
-    </style>
+   <!-- <style name="FontRegular">
+      <item name="fontPath">fonts/ProximaNovaSoft-Regular.otf</item>
+  </style>
 
-    <style name="FontSemibold">
+   <style name="FontSemibold">
         <item name="fontPath">fonts/ProximaNovaSoft-Semibold.otf</item>
-    </style>
+    </style>-->
 
     <!--region Combo A-->
 
@@ -53,7 +53,7 @@
         <item name="fontPath">fonts/NEXTBook-Light.otf</item>
     </style>
 
-    <!--endregion Combo B-->
+    <!--endregion Combo C-->
 
     <!-- XS Text Styles -->
 
