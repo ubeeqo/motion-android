@@ -54,8 +54,8 @@ public class RowValueLayout extends LinearLayout {
 
             mHeaderString = a.getString(R.styleable.RowValueLayout_header_text);
             mTitleString = a.getString(R.styleable.RowValueLayout_title_text);
-            mHeaderStyle = a.getResourceId(R.styleable.RowValueLayout_header_style, R.styleable.RowValueLayout_header_style);
-            mTitleStyle = a.getResourceId(R.styleable.RowValueLayout_title_style, R.styleable.RowValueLayout_title_style);
+            mHeaderStyle = a.getResourceId(R.styleable.RowValueLayout_header_style, 0);
+            mTitleStyle = a.getResourceId(R.styleable.RowValueLayout_title_style, 0);
 
         } finally {
             a.recycle();
