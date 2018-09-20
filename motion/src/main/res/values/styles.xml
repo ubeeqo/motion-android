@@ -200,10 +200,11 @@
     </style>
 
     <!-- M Text Styles -->
-    <style name="MRegular" parent="NextBookLightC">
+    <style name="MRegular">
         <item name="android:textSize">@dimen/m_font_size</item>
         <item name="android:textColor">@color/ink</item>
         <item name="android:lineSpacingExtra">@dimen/m_line_height</item>
+        <item name="fontPath">fonts/NEXTBook-Light.otf</item>
     </style>
 
     <style name="MRegularParagraph" parent="NextBookLightC">
