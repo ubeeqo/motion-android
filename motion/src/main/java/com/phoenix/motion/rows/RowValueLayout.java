@@ -115,4 +115,14 @@ public class RowValueLayout extends LinearLayout {
 
         mIvChevron.setVisibility(View.VISIBLE);
     }
+
+    public TextView getHeaderTextView(){
+
+        return mTvHeader;
+    }
+
+    public TextView getTitleTextView() {
+
+        return mTvTitle;
+    }
 }
