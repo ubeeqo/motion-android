@@ -89,6 +89,7 @@ public class RowValueLayout extends LinearLayout {
             mTvHeader.setTextAppearance(mContext, mHeaderStyle);
             mTvTitle.setTextAppearance(mContext, mTitleStyle);
         } else {
+
             mTvHeader.setTextAppearance(mHeaderStyle);
             mTvTitle.setTextAppearance(mTitleStyle);
         }*/
