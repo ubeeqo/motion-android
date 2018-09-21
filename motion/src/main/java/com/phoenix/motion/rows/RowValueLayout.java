@@ -85,13 +85,13 @@ public class RowValueLayout extends LinearLayout {
         setHeader(mHeaderString);
         setTitle(mTitleString);
 
-        if (Build.VERSION.SDK_INT < 23) {
+       /* if (Build.VERSION.SDK_INT < 23) {
             mTvHeader.setTextAppearance(mContext, mHeaderStyle);
             mTvTitle.setTextAppearance(mContext, mTitleStyle);
         } else {
             mTvHeader.setTextAppearance(mHeaderStyle);
             mTvTitle.setTextAppearance(mTitleStyle);
-        }
+        }*/
     }
 
     public void configureView(int header,
