@@ -367,7 +367,7 @@
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>
     </style>
 
-    <style name="XXLSemiboldDanger" parent="NextPosterMediumC">
+    <style name="XXLSemiboldDanger" parent="NextBookLightC">
         <item name="android:textSize">@dimen/xxl_font_size</item>
         <item name="android:textColor">@color/danger</item>
         <item name="android:lineSpacingExtra">@dimen/xxl_line_height</item>

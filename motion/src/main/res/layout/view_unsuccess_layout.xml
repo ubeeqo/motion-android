@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background01"
     android:padding="@dimen/default_margin">
 
     <ScrollView
@@ -46,7 +46,7 @@
                     android:layout_marginTop="8dp"
                     android:visibility="gone"
                     tools:text="Extra info about the error and about how can the user proceed to solve it"
-                    tools:visibility="visible" />
+                    tools:visibility="gone" />
 
                 <TextView
                     android:id="@+id/tv_try_again"
@@ -57,7 +57,7 @@
                     android:layout_marginTop="24dp"
                     android:visibility="gone"
                     android:text="@string/unsuccess_action_try_again"
-                    tools:visibility="visible" />
+                    tools:visibility="gone" />
 
             </LinearLayout>
 
