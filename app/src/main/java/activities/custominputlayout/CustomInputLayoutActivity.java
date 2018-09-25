@@ -2,16 +2,17 @@ package activities.custominputlayout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 
 import com.phoenix.R;
 import com.phoenix.motion.custominputlayout.CustomInputLayout;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class CustomInputLayoutActivity extends AppCompatActivity {
+public class CustomInputLayoutActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.iwt_input)

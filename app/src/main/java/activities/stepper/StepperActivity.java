@@ -2,15 +2,16 @@ package activities.stepper;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class StepperActivity extends AppCompatActivity {
+public class StepperActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_seats)

@@ -3,7 +3,7 @@ package activities.dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 
 import com.phoenix.R;
 import com.phoenix.motion.dialog.CustomAlertDialog;
@@ -12,8 +12,9 @@ import com.phoenix.motion.dialog.NeutralButtonClickListener;
 import com.phoenix.motion.dialog.PositiveButtonClickListener;
 
 import activities.DemoActivity;
+import activities.base.BaseActivity;
 
-public class CustomAlertDialogActivity extends AppCompatActivity {
+public class CustomAlertDialogActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -2,16 +2,17 @@ package activities.unsuccess;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class UnSuccessActivity extends AppCompatActivity {
+public class UnSuccessActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_unsuccess_subtitle)

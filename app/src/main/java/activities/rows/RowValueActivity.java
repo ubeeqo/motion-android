@@ -2,17 +2,18 @@ package activities.rows;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RowValueActivity extends AppCompatActivity {
+public class RowValueActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_row_header)
