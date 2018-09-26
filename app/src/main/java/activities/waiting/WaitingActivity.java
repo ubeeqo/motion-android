@@ -8,10 +8,11 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class WaitingActivity extends AppCompatActivity {
+public class WaitingActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_waiting_title)

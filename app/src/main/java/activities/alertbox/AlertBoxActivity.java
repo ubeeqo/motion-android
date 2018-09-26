@@ -10,10 +10,11 @@ import com.phoenix.motion.alertbox.OnAlertBoxClickListener;
 import com.phoenix.motion.dangerbox.DangerBoxView;
 import com.phoenix.motion.dangerbox.OnDangerBoxClickListener;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AlertBoxActivity extends AppCompatActivity
+public class AlertBoxActivity extends BaseActivity
         implements OnAlertBoxClickListener,
         OnDangerBoxClickListener {
 

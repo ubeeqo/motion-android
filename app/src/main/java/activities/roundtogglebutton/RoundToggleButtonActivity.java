@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.phoenix.R;
 
-public class RoundToggleButtonActivity extends AppCompatActivity {
+import activities.base.BaseActivity;
+
+public class RoundToggleButtonActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

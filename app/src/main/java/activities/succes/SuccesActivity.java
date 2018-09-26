@@ -9,10 +9,11 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class SuccesActivity extends AppCompatActivity {
+public class SuccesActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_success_title)

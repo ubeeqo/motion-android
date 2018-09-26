@@ -8,11 +8,12 @@ import android.view.View;
 import com.phoenix.R;
 import com.phoenix.motion.licensephoto.LicensePhotoLayout;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LicensePhotoActivity extends AppCompatActivity {
+public class LicensePhotoActivity extends BaseActivity {
 
     //region BindingViews
     @BindView(R.id.license_photo_back)

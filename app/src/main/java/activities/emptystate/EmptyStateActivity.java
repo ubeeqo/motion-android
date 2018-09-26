@@ -9,11 +9,12 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class EmptyStateActivity extends AppCompatActivity {
+public class EmptyStateActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_message)

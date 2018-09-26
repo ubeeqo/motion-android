@@ -11,6 +11,7 @@ import com.phoenix.R;
 import com.phoenix.motion.rows.RowValueLayout;
 
 import activities.alertbox.AlertBoxActivity;
+import activities.base.BaseActivity;
 import activities.callus.CallUsActivity;
 import activities.dialog.CustomAlertDialogActivity;
 import activities.dialoginoutbox.DialogInputBoxActivity;
@@ -42,7 +43,7 @@ import model.ComponentModel;
 import utils.ComponentsUtils;
 
 
-public class DemoActivity extends AppCompatActivity implements View.OnClickListener {
+public class DemoActivity extends BaseActivity implements View.OnClickListener {
 
 
     private ComponentsUtils mComponentsUtils;

@@ -8,10 +8,11 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class UnSuccessActivity extends AppCompatActivity {
+public class UnSuccessActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_unsuccess_subtitle)

@@ -7,10 +7,11 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ListOptionActivity extends AppCompatActivity {
+public class ListOptionActivity extends BaseActivity {
 
     @BindView(R.id.tv_option_text)
     TextView mTvOptionText;

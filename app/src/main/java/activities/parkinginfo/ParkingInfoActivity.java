@@ -8,11 +8,12 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ParkingInfoActivity extends AppCompatActivity {
+public class ParkingInfoActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.tv_parking_name)

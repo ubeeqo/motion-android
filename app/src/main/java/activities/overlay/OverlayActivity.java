@@ -7,7 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import com.phoenix.R;
 import com.phoenix.motion.overlay.OverlayDialog;
 
-public class OverlayActivity extends AppCompatActivity {
+import activities.base.BaseActivity;
+
+public class OverlayActivity extends BaseActivity {
 
 
     @Override

@@ -9,11 +9,12 @@ import android.widget.TextView;
 
 import com.phoenix.R;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class PaymentButtonActivity extends AppCompatActivity {
+public class PaymentButtonActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.iv_icon)

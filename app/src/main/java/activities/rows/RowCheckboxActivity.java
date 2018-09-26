@@ -7,10 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import com.phoenix.R;
 import com.phoenix.motion.rows.ViewRowCheckboxLayout;
 
+import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RowCheckboxActivity extends AppCompatActivity {
+public class RowCheckboxActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.row_cb_marketing)

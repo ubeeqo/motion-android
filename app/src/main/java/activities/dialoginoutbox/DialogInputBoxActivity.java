@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.phoenix.R;
 
-public class DialogInputBoxActivity extends AppCompatActivity {
+import activities.base.BaseActivity;
+
+public class DialogInputBoxActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -12,8 +12,9 @@ import com.phoenix.motion.dialog.NeutralButtonClickListener;
 import com.phoenix.motion.dialog.PositiveButtonClickListener;
 
 import activities.DemoActivity;
+import activities.base.BaseActivity;
 
-public class CustomAlertDialogActivity extends AppCompatActivity {
+public class CustomAlertDialogActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
