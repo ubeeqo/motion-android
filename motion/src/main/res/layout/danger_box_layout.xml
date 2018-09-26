@@ -6,6 +6,7 @@
     android:background="@drawable/background_danger_box"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
+    android:paddingBottom="@dimen/default_bottom_margin"
     android:paddingTop="@dimen/default_top_margin">
 
     <TextView
@@ -19,19 +20,25 @@
         tools:text="We are still validating your license" />
 
     <View
+        android:id="@+id/v_separator"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="@dimen/default_top_margin"
-        android:background="@color/white" />
+        android:background="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/bt_action"
-        style="@style/ButtonLinkWhite"
+        style="@style/ButtonLinkWhiteNoPadding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="@dimen/default_left_margin"
         android:layout_marginRight="@dimen/default_right_margin"
-        tools:text="LABEL" />
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:visibility="gone"
+        tools:text="LABEL"
+        tools:visibility="visible" />
 
 </LinearLayout>

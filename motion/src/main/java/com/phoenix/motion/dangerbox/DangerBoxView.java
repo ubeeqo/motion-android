@@ -14,6 +14,7 @@ public class DangerBoxView extends LinearLayout {
 
     private TextView mTvMessage;
     private TextView mTvAction;
+    private View mVSeparator;
     private OnDangerBoxClickListener mListener;
 
     public DangerBoxView(Context context) {
@@ -41,6 +42,7 @@ public class DangerBoxView extends LinearLayout {
 
         mTvMessage = findViewById(R.id.tv_message);
         mTvAction = findViewById(R.id.bt_action);
+        mVSeparator = findViewById(R.id.v_separator);
 
         mTvAction.setOnClickListener(new OnClickListener() {
 
@@ -65,6 +67,8 @@ public class DangerBoxView extends LinearLayout {
     public void setAction(String action) {
 
         mTvAction.setText(action);
+        mTvAction.setVisibility(View.VISIBLE);
+        mVSeparator.setVisibility(View.VISIBLE);
     }
 
     public void show() {
