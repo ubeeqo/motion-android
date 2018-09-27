@@ -33,7 +33,7 @@ import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
 import activities.status.StatusActivity;
 import activities.stepper.StepperActivity;
-import activities.succes.SuccesActivity;
+import activities.succes.SuccessActivity;
 import activities.unsuccess.UnSuccessActivity;
 import activities.waiting.WaitingActivity;
 import butterknife.BindView;
@@ -171,7 +171,7 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 17:
 
-                Intent intentSucces = new Intent(this, SuccesActivity.class);
+                Intent intentSucces = new Intent(this, SuccessActivity.class);
                 startActivity(intentSucces);
                 break;
             case 18:

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PhoenixMotion</string>
+    <string name="success_view_subtitle">Connecting with car</string>
 </resources>

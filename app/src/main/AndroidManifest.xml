@@ -83,7 +83,7 @@
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="activities.succes.SuccesActivity"
+            android:name="activities.succes.SuccessActivity"
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />

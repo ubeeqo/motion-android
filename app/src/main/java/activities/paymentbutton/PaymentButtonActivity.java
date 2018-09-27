@@ -21,6 +21,9 @@ public class PaymentButtonActivity extends BaseActivity implements PaymentButton
     //region BindViews
     @BindView(R.id.payment_button)
     PaymentButtonView mPaymentButtonView;
+
+    @BindView(R.id.payment_button_error)
+    PaymentButtonView mPaymentButtonViewError;
     //endregion
 
     @Override
@@ -37,19 +40,17 @@ public class PaymentButtonActivity extends BaseActivity implements PaymentButton
 
         mPaymentButtonView.setPaymentMethod("**** 1234","card");
         mPaymentButtonView.setClickListener(this);
+
+        mPaymentButtonViewError.setPaymentMethod("**** 1234", "credit-card");
+        mPaymentButtonViewError.setClickListener(this);
+        mPaymentButtonViewError.showError("Psst! You need to fill this up");
     }
 
     //region OnClick
-    @OnClick(R.id.payment_content)
-    public void showError(View view) {
-
-        mPaymentButtonView.hideError();
-    }
 
     @Override
     public void onPaymentClick() {
 
-        mPaymentButtonView.showError("Psst! You need to fill this up");
     }
     //endregion
 }

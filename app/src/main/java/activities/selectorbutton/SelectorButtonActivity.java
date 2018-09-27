@@ -2,24 +2,23 @@ package activities.selectorbutton;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.selectorbutton.SelectorButtonClickListener;
+import com.phoenix.motion.selectorbutton.SelectorButtonView;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
-public class SelectorButtonActivity extends BaseActivity {
+public class SelectorButtonActivity extends BaseActivity implements SelectorButtonClickListener {
 
     //region BindViews
-    @BindView(R.id.tv_text)
-    TextView mTvText;
-    @BindView(R.id.tv_error)
-    TextView mTvError;
+    @BindView(R.id.selector_button)
+    SelectorButtonView mSelectorButtonView;
+
+    @BindView(R.id.selector_button_error)
+    SelectorButtonView mSelectorButtonViewError;
     //endregion
 
     @Override
@@ -34,21 +33,16 @@ public class SelectorButtonActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvText.setText("**** 1234");
-        mTvError.setText("Psst! You need to fill this up!");
+        mSelectorButtonView.initSelectorText("**** 1234");
+        mSelectorButtonView.setClickListener(this);
+
+        mSelectorButtonViewError.initSelectorText("**** 1234");
+        mSelectorButtonViewError.setClickListener(this);
+        mSelectorButtonViewError.showError("Psst! You need to fill this up!");
     }
 
-    //region OnClick
-    @OnClick(R.id.selector_content)
-    public void showError(View view) {
+    @Override
+    public void onSelectorClick() {
 
-        if (mTvError.getVisibility() == View.GONE) {
-
-            mTvError.setVisibility(View.VISIBLE);
-        } else {
-
-            mTvError.setVisibility(View.GONE);
-        }
     }
-    //endregion
 }
