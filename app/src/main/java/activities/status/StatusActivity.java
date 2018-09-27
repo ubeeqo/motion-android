@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.zonestatus.ZoneStatusView;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -17,12 +18,11 @@ import butterknife.OnClick;
 public class StatusActivity extends BaseActivity {
 
     //region BindViews
-    @BindView(R.id.tv_status)
-    TextView mTvStatus;
-    @BindView(R.id.tv_status_info)
-    TextView mTvInfo;
-    @BindView(R.id.iv_status_icon)
-    ImageView mIvStatusIcon;
+    @BindView(R.id.zone_status_view_component)
+    ZoneStatusView mZoneStatusView;
+
+    @BindView(R.id.zone_status_view_component_more_info)
+    ZoneStatusView mZoneStatusViewMoreInfo;
     //endregion
 
     @Override
@@ -37,22 +37,20 @@ public class StatusActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvStatus.setText("Delayed vehicle");
-        mTvInfo.setText("Our prior user is being delayed. Please call us for help");
-        mIvStatusIcon.setBackgroundResource(R.drawable.ic_alert);
+        initZoneStatusView();
+        initZoneStatusViewMoreInfo();
     }
 
-    //region OnClick
-    @OnClick(R.id.status_content)
-    public void showMessage(View view) {
+    public void initZoneStatusView() {
 
-        if (mTvInfo.getVisibility() == View.GONE) {
-
-            mTvInfo.setVisibility(View.VISIBLE);
-        } else {
-
-            mTvInfo.setVisibility(View.GONE);
-        }
+        mZoneStatusView.setStatusIcon(getResources().getDrawable(R.drawable.ic_alert));
+        mZoneStatusView.setStatus("Delayed vehicle");
     }
-    //endregion
+
+    public void initZoneStatusViewMoreInfo() {
+
+        mZoneStatusViewMoreInfo.setStatusIcon(getResources().getDrawable(R.drawable.ic_alert));
+        mZoneStatusViewMoreInfo.setStatus("Delayed vehicle");
+        mZoneStatusViewMoreInfo.setStatusInfo("Our prior user is being delayed. Please call us for help");
+    }
 }
