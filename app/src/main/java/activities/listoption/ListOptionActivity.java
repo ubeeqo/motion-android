@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.listoption.ListOption;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -13,8 +14,13 @@ import butterknife.ButterKnife;
 
 public class ListOptionActivity extends BaseActivity {
 
-    @BindView(R.id.tv_option_text)
-    TextView mTvOptionText;
+    //region Binding
+    @BindView(R.id.list_option_component_enable)
+    ListOption mListOption;
+
+    @BindView(R.id.list_option_component_disable)
+    ListOption mListOptionDisable;
+    //endregion
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,6 +34,9 @@ public class ListOptionActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvOptionText.setText("Extend booking");
+        mListOption.configureView(R.string.list_option_component_text, R.drawable.ic_extend_time);
+
+        mListOptionDisable.configureView(R.string.list_option_component_text, R.drawable.ic_extend_time);
+        mListOptionDisable.setEnabled(false);
     }
 }
