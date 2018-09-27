@@ -25,7 +25,6 @@ public class UnSuccessActivity extends BaseActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unsuccess);
-        getSupportActionBar().setTitle(this.getClass().getSimpleName());
         ButterKnife.bind(this);
         fillFields();
     }
@@ -34,5 +33,6 @@ public class UnSuccessActivity extends BaseActivity {
 
         mUnsuccessView.setTitle(getString(R.string.unsuccess_title));
         mUnsuccessView.setSubtitle("Extra info about the error and about how can the user proceed to solve it");
+        mUnsuccessView.setActivity(this);
     }
 }
