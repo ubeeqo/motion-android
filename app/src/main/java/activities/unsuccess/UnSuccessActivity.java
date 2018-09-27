@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.unsuccess.UnsuccessView;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -15,10 +16,8 @@ import butterknife.ButterKnife;
 public class UnSuccessActivity extends BaseActivity {
 
     //region BindViews
-    @BindView(R.id.tv_unsuccess_subtitle)
-    TextView mTvSubtitle;
-    @BindView(R.id.tv_try_again)
-    TextView mTvTryAgain;
+    @BindView(R.id.unsuccess_view_component)
+    UnsuccessView mUnsuccessView;
     //endregion
 
     @Override
@@ -33,8 +32,7 @@ public class UnSuccessActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvSubtitle.setText("Extra info about the error and about how can the user proceed to solve it");
-        mTvSubtitle.setVisibility(View.VISIBLE);
-        mTvTryAgain.setVisibility(View.VISIBLE);
+        mUnsuccessView.setTitle(getString(R.string.unsuccess_title));
+        mUnsuccessView.setSubtitle("Extra info about the error and about how can the user proceed to solve it");
     }
 }
