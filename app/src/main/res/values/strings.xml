@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">PhoenixMotion</string>
     <string name="success_view_subtitle">Connecting with car</string>
+    <string name="info_view_component_subtitle">This is taking longer than expected. Thanks for your patience.</string>
 </resources>
