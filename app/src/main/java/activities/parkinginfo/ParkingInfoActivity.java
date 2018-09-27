@@ -38,9 +38,8 @@ public class ParkingInfoActivity extends BaseActivity implements ParkingInfoClic
     private void fillFields() {
 
 
-
-        mParkingInfoLayout.init(this,"sdasd","Parking BSM de la France","","",true);
-        mParkingInfoLayoutWithAddress.init(this,"sdasd","Parking BSM","Ronda Sant Pere","Ronda Sant Pere 54",true);
+        mParkingInfoLayout.init(this, "sdasd", "Parking BSM de la France", "", "", true);
+        mParkingInfoLayoutWithAddress.init(this, "sdasd", "Parking BSM", "Ronda Sant Pere", "Ronda Sant Pere 54", true);
     }
 
     @Override

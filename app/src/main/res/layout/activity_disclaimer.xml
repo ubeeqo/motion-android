@@ -6,6 +6,7 @@
     android:layout_margin="@dimen/default_margin">
 
     <com.phoenix.motion.disclaimer.DisclaimerView
+        android:id="@+id/disclaimer_component"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
