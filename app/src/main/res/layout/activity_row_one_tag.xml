@@ -6,6 +6,13 @@
     android:background="@color/ink_light">
 
     <com.phoenix.motion.rows.RowOneTagLayout
+        android:id="@+id/row_one_tag_component"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.phoenix.motion.rows.RowOneTagLayout
+        android:id="@+id/row_one_tag_component_with_chevron"
         android:layout_marginTop="@dimen/default_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
