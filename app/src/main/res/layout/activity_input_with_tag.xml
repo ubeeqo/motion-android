@@ -2,14 +2,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ll_container"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/default_margin">
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <com.phoenix.motion.custominputlayout.CustomInputLayout
         android:id="@+id/iwt_input"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp" />
+
+    <com.phoenix.motion.custominputlayout.CustomInputLayout
+        android:id="@+id/iwt_input_with_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp" />
+
+    <com.phoenix.motion.custominputlayout.CustomInputLayout
+        android:id="@+id/iwt_input_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp" />
+
+    <com.phoenix.motion.custominputlayout.CustomInputLayout
+        android:id="@+id/iwt_input_place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp" />
+
+    <com.phoenix.motion.custominputlayout.CustomInputLayout
+        android:id="@+id/iwt_input_without_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp" />
 
 </LinearLayout>
