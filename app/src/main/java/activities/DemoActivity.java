@@ -3,11 +3,11 @@ package activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.phoenix.R;
+import com.phoenix.motion.overlay.OverlayDialog;
 import com.phoenix.motion.rows.RowValueLayout;
 
 import activities.alertbox.AlertBoxActivity;
@@ -22,7 +22,6 @@ import activities.info.InfoActivity;
 import activities.custominputlayout.CustomInputLayoutActivity;
 import activities.licensephoto.LicensePhotoActivity;
 import activities.listoption.ListOptionActivity;
-import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
 import activities.paymentbutton.PaymentButtonActivity;
 import activities.roundlabel.RoundLabelActivity;
@@ -118,8 +117,7 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 6:
 
-                Intent intentOverlay = new Intent(this, OverlayActivity.class);
-                startActivity(intentOverlay);
+                initDialogOverlay();
                 break;
             case 7:
 
@@ -217,5 +215,15 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 startActivity(intentRoundLabel);
                 break;
         }
+    }
+
+    public void initDialogOverlay() {
+
+        OverlayDialog overlayDialog = new OverlayDialog(this);
+        overlayDialog.setTitle("We are still validating your license...");
+        overlayDialog.setMessage("Why? Our cars open by using your smartphone through this app, " +
+                "but in some cases there's poor connection on the parkings. " +
+                "On those case you can user a card.");
+        overlayDialog.show();
     }
 }

@@ -8,21 +8,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.paymentbutton.PaymentButtonClickListener;
+import com.phoenix.motion.paymentbutton.PaymentButtonView;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class PaymentButtonActivity extends BaseActivity {
+public class PaymentButtonActivity extends BaseActivity implements PaymentButtonClickListener {
 
     //region BindViews
-    @BindView(R.id.iv_icon)
-    ImageView mIvIcon;
-    @BindView(R.id.tv_payment_method)
-    TextView mTvPaymentMethod;
-    @BindView(R.id.tv_error)
-    TextView mTvError;
+    @BindView(R.id.payment_button)
+    PaymentButtonView mPaymentButtonView;
     //endregion
 
     @Override
@@ -37,22 +35,21 @@ public class PaymentButtonActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mIvIcon.setBackgroundResource(R.drawable.ic_credit_card);
-        mTvPaymentMethod.setText("**** 1234");
-        mTvError.setText("Psst! You need to fill this up");
+        mPaymentButtonView.setPaymentMethod("**** 1234","card");
+        mPaymentButtonView.setClickListener(this);
     }
 
     //region OnClick
     @OnClick(R.id.payment_content)
     public void showError(View view) {
 
-        if (mTvError.getVisibility() == View.GONE) {
+        mPaymentButtonView.hideError();
+    }
 
-            mTvError.setVisibility(View.VISIBLE);
-        } else {
+    @Override
+    public void onPaymentClick() {
 
-            mTvError.setVisibility(View.GONE);
-        }
+        mPaymentButtonView.showError("Psst! You need to fill this up");
     }
     //endregion
 }
