@@ -4,4 +4,5 @@
     <string name="info_view_component_subtitle">This is taking longer than expected. Thanks for your patience.</string>
     <string name="list_option_component_text">Extend booking</string>
     <string name="row_layout_component_header">Personal information</string>
+    <string name="waiting_view_component_subtitle">manually. This process normally requires 30min to 2 hours.</string>
 </resources>
