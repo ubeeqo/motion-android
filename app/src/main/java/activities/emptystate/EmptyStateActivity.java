@@ -40,11 +40,6 @@ public class EmptyStateActivity extends BaseActivity implements OnEmptyStateActi
         mEmptyStateView.setAction("Book now",this);
     }
 
-    @OnClick(R.id.bt_action)
-    public void onClick() {
-
-    }
-
     @Override
     public void onActionClick() {
 
