@@ -47,6 +47,7 @@ public class LicensePhotoActivity extends BaseActivity {
     //region Onclick
     @OnClick(R.id.license_photo_back)
     public void onClickPhotobBack() {
+
         if (mLPBack.getImageCheckVisibility() == View.GONE) {
             mLPBack.showImageCheck();
             mLPBack.hideIcon();
@@ -66,6 +67,7 @@ public class LicensePhotoActivity extends BaseActivity {
 
     @OnClick(R.id.license_photo_front)
     public void onClickPhotoFront() {
+
         if (mLPFront.getImageCheckVisibility() == View.GONE) {
 
             mLPFront.showImageCheck();

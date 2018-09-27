@@ -15,7 +15,7 @@ public class RowCheckboxActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.row_cb_marketing)
-    ViewRowCheckboxLayout mRowCbMarketin;
+    ViewRowCheckboxLayout mRowCbMarketing;
     @BindView(R.id.row_cb_allow)
     ViewRowCheckboxLayout mRowCbAllow;
     //endregion
@@ -31,7 +31,7 @@ public class RowCheckboxActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mRowCbMarketin.setTitle("I wish to receive news and partner's special offers from Ubeeqo International SAS");
+        mRowCbMarketing.setTitle("I wish to receive news and partner's special offers from Ubeeqo International SAS");
         mRowCbAllow.setTitle("Allow to record my activity");
     }
 }

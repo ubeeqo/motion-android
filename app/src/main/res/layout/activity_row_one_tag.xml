@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ink_light">
+    android:background="@color/ink_light"
+    android:orientation="vertical">
 
     <com.phoenix.motion.rows.RowOneTagLayout
         android:id="@+id/row_one_tag_component"
-        android:layout_marginTop="@dimen/default_margin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin" />
 
     <com.phoenix.motion.rows.RowOneTagLayout
         android:id="@+id/row_one_tag_component_with_chevron"
-        android:layout_marginTop="@dimen/default_margin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin" />
 
 </LinearLayout>

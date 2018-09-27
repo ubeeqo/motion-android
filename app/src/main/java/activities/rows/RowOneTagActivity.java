@@ -41,6 +41,4 @@ public class RowOneTagActivity extends BaseActivity {
         mRowOneTagLayoutWithChevron.setTitle("Federico Perez");
         mRowOneTagLayoutWithChevron.setChevron();
     }
-
-
 }
