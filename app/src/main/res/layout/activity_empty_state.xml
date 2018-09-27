@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <com.phoenix.motion.emptystate.EmptyStateView
+        android:id="@+id/empty_state_component"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </com.phoenix.motion.emptystate.EmptyStateView>

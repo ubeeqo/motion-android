@@ -7,13 +7,16 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.phoenix.R;
+import com.phoenix.motion.dialog.CustomAlertDialog;
+import com.phoenix.motion.dialog.NegativeButtonClickListener;
+import com.phoenix.motion.dialog.NeutralButtonClickListener;
+import com.phoenix.motion.dialog.PositiveButtonClickListener;
 import com.phoenix.motion.overlay.OverlayDialog;
 import com.phoenix.motion.rows.RowValueLayout;
 
 import activities.alertbox.AlertBoxActivity;
 import activities.base.BaseActivity;
 import activities.callus.CallUsActivity;
-import activities.dialog.CustomAlertDialogActivity;
 import activities.dialoginoutbox.DialogInputBoxActivity;
 import activities.disclaimer.DisclaimerActivity;
 import activities.divider.DividerActivity;
@@ -42,7 +45,11 @@ import model.ComponentModel;
 import utils.ComponentsUtils;
 
 
-public class DemoActivity extends BaseActivity implements View.OnClickListener {
+public class DemoActivity extends BaseActivity
+        implements View.OnClickListener,
+        PositiveButtonClickListener,
+        NeutralButtonClickListener,
+        NegativeButtonClickListener {
 
 
     private ComponentsUtils mComponentsUtils;
@@ -97,8 +104,7 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 2:
 
-                Intent intentCustomDialog = new Intent(this, CustomAlertDialogActivity.class);
-                startActivity(intentCustomDialog);
+                initDialogCustomAlertDialog();
                 break;
             case 3:
 
@@ -225,5 +231,32 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 "but in some cases there's poor connection on the parkings. " +
                 "On those case you can user a card.");
         overlayDialog.show();
+    }
+
+    public void initDialogCustomAlertDialog() {
+
+        CustomAlertDialog customAlertDialog = new CustomAlertDialog(this);
+
+        customAlertDialog.setTitle("Check out times");
+        customAlertDialog.setMessage("Customer care working hours: Mon - Sat (8.00 to 23:00h CET)");
+        customAlertDialog.setPositiveButton("Cancel", this);
+        customAlertDialog.setNeutralButton("Neutral", this);
+        customAlertDialog.setNegativeButton("Accept", this);
+        customAlertDialog.show();
+    }
+
+    @Override
+    public void onNegativeButtonClickListener() {
+
+    }
+
+    @Override
+    public void onNeutralButtonClickListener() {
+
+    }
+
+    @Override
+    public void onPositiveButtonClickListener() {
+
     }
 }

@@ -27,10 +27,6 @@
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="activities.dialog.CustomAlertDialogActivity"
-            android:parentActivityName="activities.DemoActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="activities.divider.DividerActivity"
             android:parentActivityName="activities.DemoActivity"
             android:screenOrientation="portrait" />
