@@ -34,58 +34,38 @@ public class LicensePhotoActivity extends BaseActivity {
         fillFields();
     }
 
+    // region HelpUI
     private void fillFields() {
+
+        initLicensePhotoBack();
+        initLicensePhotoFront();
+        initLicensePhotoSelfie();
+    }
+
+    private void initLicensePhotoBack() {
 
         mLPBack.setTag("Driving license Back");
         mLPBack.setIcon(R.drawable.ic_dl_back);
+    }
+
+    private void initLicensePhotoFront() {
+
         mLPFront.setTag("Driving license front");
-        mLPFront.setIcon(R.drawable.ic_dl_front);
+        mLPFront.hideIcon();
+        mLPFront.showImageCheck();
+        mLPFront.showPicture();
+        mLPFront.setPicture(R.drawable.img_dni);
+        mLPFront.changeBorderToGreenLine();
+    }
+
+    private void initLicensePhotoSelfie() {
+
         mLPSelfie.setTag("Selfie + Driving license");
         mLPSelfie.setIcon(R.drawable.ic_selfie);
     }
+    //endregion
 
     //region Onclick
-    @OnClick(R.id.license_photo_back)
-    public void onClickPhotobBack() {
-
-        if (mLPBack.getImageCheckVisibility() == View.GONE) {
-            mLPBack.showImageCheck();
-            mLPBack.hideIcon();
-            mLPBack.hideTag();
-            mLPBack.showPicture();
-            mLPBack.setPicture(R.drawable.img_dni);
-            mLPBack.changeBorderToGreenLine();
-        } else {
-
-            mLPBack.hideImageCheck();
-            mLPBack.showIcon();
-            mLPBack.showTag();
-            mLPBack.hidePicture();
-            mLPBack.changeBorderToDashLine();
-        }
-    }
-
-    @OnClick(R.id.license_photo_front)
-    public void onClickPhotoFront() {
-
-        if (mLPFront.getImageCheckVisibility() == View.GONE) {
-
-            mLPFront.showImageCheck();
-            mLPFront.hideIcon();
-            mLPFront.hideTag();
-            mLPFront.showPicture();
-            mLPFront.setPicture(R.drawable.img_dni);
-            mLPFront.changeBorderToGreenLine();
-        } else {
-
-            mLPFront.hideImageCheck();
-            mLPFront.showIcon();
-            mLPFront.showTag();
-            mLPFront.hidePicture();
-            mLPFront.changeBorderToDashLine();
-        }
-    }
-
     @OnClick(R.id.license_photo_selfie)
     public void onClickPhotoSelfie() {
 
