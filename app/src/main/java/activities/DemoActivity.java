@@ -36,7 +36,9 @@ import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
 import activities.status.StatusActivity;
 import activities.stepper.StepperActivity;
+import activities.styles.ButtonStylesActivity;
 import activities.succes.SuccessActivity;
+import activities.styles.TextStylesActivity;
 import activities.unsuccess.UnSuccessActivity;
 import activities.waiting.WaitingActivity;
 import butterknife.BindView;
@@ -219,6 +221,16 @@ public class DemoActivity extends BaseActivity
 
                 Intent intentRoundLabel = new Intent(this, RoundLabelActivity.class);
                 startActivity(intentRoundLabel);
+                break;
+            case 26:
+
+                Intent intentTextStyles = new Intent(this, TextStylesActivity.class);
+                startActivity(intentTextStyles);
+                break;
+            case 27:
+
+                Intent intentButtonStyles = new Intent(this, ButtonStylesActivity.class);
+                startActivity(intentButtonStyles);
                 break;
         }
     }
