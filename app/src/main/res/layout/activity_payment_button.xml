@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ink_lightest"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingStart="@dimen/default_left_margin"
+    android:paddingEnd="@dimen/default_right_margin">
 
     <com.phoenix.motion.paymentbutton.PaymentButtonView
         android:id="@+id/payment_button"
