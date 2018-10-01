@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.rows.RowOneTagLayout;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -16,10 +17,11 @@ import butterknife.ButterKnife;
 public class RowOneTagActivity extends BaseActivity {
 
     //region BindViews
-    @BindView(R.id.tv_row_title)
-    TextView mTvTitle;
-    @BindView(R.id.iv_row_chevron)
-    ImageView mIvChevron;
+    @BindView(R.id.row_one_tag_component)
+    RowOneTagLayout mRowOneTagLayout;
+
+    @BindView(R.id.row_one_tag_component_with_chevron)
+    RowOneTagLayout mRowOneTagLayoutWithChevron;
     //endregion
 
     @Override
@@ -34,7 +36,9 @@ public class RowOneTagActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvTitle.setText("Federico Perez");
-        mIvChevron.setVisibility(View.VISIBLE);
+        mRowOneTagLayout.setTitle("Federico Perez");
+
+        mRowOneTagLayoutWithChevron.setTitle("Federico Perez");
+        mRowOneTagLayoutWithChevron.setChevron();
     }
 }

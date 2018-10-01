@@ -65,14 +65,14 @@ public class PaymentButtonView extends LinearLayout {
     public void showError(String error) {
 
         mRlPaymentMethod.setBackgroundResource(R.drawable.background_payment_method_error);
-        mTvPaymentMethod.setTextAppearance(getContext(), R.style.MSemiboldDanger);
+        mTvPaymentMethod.setTextColor(getResources().getColor(R.color.danger));
         mTvError.setText(error);
         mTvError.setVisibility(View.VISIBLE);
     }
 
     public void hideError() {
 
-        mTvPaymentMethod.setTextAppearance(getContext(), R.style.MSemibold);
+        mTvPaymentMethod.setTextColor(getResources().getColor(R.color.ink));
         mRlPaymentMethod.setBackgroundResource(R.drawable.selector_payment_button);
         mTvError.setVisibility(View.GONE);
     }

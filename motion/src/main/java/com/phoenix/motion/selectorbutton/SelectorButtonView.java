@@ -61,14 +61,15 @@ public class SelectorButtonView extends LinearLayout {
     public void showError(String error) {
 
         mRlSelector.setBackgroundResource(R.drawable.background_payment_method_error);
-        mTvText.setTextAppearance(getContext(), R.style.MSemiboldDanger);
+        mTvText.setTextColor(getResources().getColor(R.color.danger));
         mTvError.setText(error);
         mTvError.setVisibility(View.VISIBLE);
     }
 
     public void hideError() {
 
-        mTvText.setTextAppearance(getContext(), R.style.MSemibold);
+        //mTvText.setTextAppearance(getContext(), R.style.MSemibold);
+        mTvText.setTextColor(getResources().getColor(R.color.ink));
         mRlSelector.setBackgroundResource(R.drawable.selector_payment_button);
         mTvError.setVisibility(View.GONE);
     }

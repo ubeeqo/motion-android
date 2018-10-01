@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.stepper.StepperView;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -14,8 +15,8 @@ import butterknife.ButterKnife;
 public class StepperActivity extends BaseActivity {
 
     //region BindViews
-    @BindView(R.id.tv_seats)
-    TextView mTvSeats;
+    @BindView(R.id.steper_component)
+    StepperView mStepperView;
     //endregion
 
     @Override
@@ -30,6 +31,6 @@ public class StepperActivity extends BaseActivity {
 
     private void fillField() {
 
-        mTvSeats.setText("4");
+        mStepperView.init(5);
     }
 }

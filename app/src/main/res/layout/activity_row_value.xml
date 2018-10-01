@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ink_light">
+    android:background="@color/ink_light"
+    android:orientation="vertical">
 
     <com.phoenix.motion.rows.RowValueLayout
-        android:layout_marginTop="@dimen/default_margin"
+        android:id="@+id/row_value_component"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin" />
+
+    <com.phoenix.motion.rows.RowValueLayout
+        android:id="@+id/row_value_component_with_chevron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin" />
 
 </LinearLayout>

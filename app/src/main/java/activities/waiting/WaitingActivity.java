@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.waiting.WaitingView;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -15,10 +16,8 @@ import butterknife.ButterKnife;
 public class WaitingActivity extends BaseActivity {
 
     //region BindViews
-    @BindView(R.id.tv_waiting_title)
-    TextView mTvTitle;
-    @BindView(R.id.tv_wating_subtitle)
-    TextView mTvSubtitle;
+    @BindView(R.id.waiting_view_component)
+    WaitingView mWaitingView;
     //endregion
 
     @Override
@@ -32,9 +31,8 @@ public class WaitingActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvTitle.setText("We're still validiting your license");
-        mTvSubtitle.setText("One of our customer care members is validating your driver license " +
-                "manually. This process normally requires 30min to 2 hours.");
-        mTvSubtitle.setVisibility(View.VISIBLE);
+        mWaitingView.setImage(R.drawable.ic_alert);
+        mWaitingView.setTitle("We're still validiting your license");
+        mWaitingView.setSubtitle(R.string.waiting_view_component_subtitle);
     }
 }

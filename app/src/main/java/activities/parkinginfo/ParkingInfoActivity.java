@@ -7,19 +7,22 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.parking.ParkingInfoClickListener;
+import com.phoenix.motion.parking.ParkingInfoLayout;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ParkingInfoActivity extends BaseActivity {
+public class ParkingInfoActivity extends BaseActivity implements ParkingInfoClickListener {
 
     //region BindViews
-    @BindView(R.id.tv_parking_name)
-    TextView mTvParkingName;
-    @BindView(R.id.tv_parking_address)
-    TextView mTvAddress;
+    @BindView(R.id.parking_info_component)
+    ParkingInfoLayout mParkingInfoLayout;
+
+    @BindView(R.id.parking_info_component_with_address)
+    ParkingInfoLayout mParkingInfoLayoutWithAddress;
     //endregion
 
     @Override
@@ -34,19 +37,13 @@ public class ParkingInfoActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvParkingName.setText("Parking BSM de la France");
-        mTvAddress.setText("Ronda Sant Pere");
+
+        mParkingInfoLayout.init(this, "sdasd", "Parking BSM de la France", "", "", true);
+        mParkingInfoLayoutWithAddress.init(this, "sdasd", "Parking BSM", "Ronda Sant Pere", "Ronda Sant Pere 54", true);
     }
 
-    @OnClick(R.id.layout_content)
-    public void showAddress(View view) {
+    @Override
+    public void onParkingInfoClick(String parkingUuid, boolean geofence) {
 
-        if (mTvAddress.getVisibility() == View.GONE) {
-
-            mTvAddress.setVisibility(View.VISIBLE);
-        } else {
-
-            mTvAddress.setVisibility(View.GONE);
-        }
     }
 }

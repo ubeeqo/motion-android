@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.rows.RowValueLayout;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -16,12 +17,11 @@ import butterknife.ButterKnife;
 public class RowValueActivity extends BaseActivity {
 
     //region BindViews
-    @BindView(R.id.tv_row_header)
-    TextView mTvRowHeader;
-    @BindView(R.id.tv_row_title)
-    TextView mTvRowTitle;
-    @BindView(R.id.iv_row_chevron)
-    ImageView mTvRowChevron;
+    @BindView(R.id.row_value_component)
+    RowValueLayout mRowValueLayout;
+
+    @BindView(R.id.row_value_component_with_chevron)
+    RowValueLayout mRowValueLayoutWithChevron;
     //endregion
 
     @Override
@@ -36,8 +36,20 @@ public class RowValueActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvRowChevron.setVisibility(View.VISIBLE);
-        mTvRowHeader.setText("Personal information");
-        mTvRowTitle.setText("Federico Perez");
+        initRowValue();
+        initRowValueWithChevron();
+    }
+
+    public void initRowValue() {
+
+        mRowValueLayout.setHeader("Personal information");
+        mRowValueLayout.setTitle("Federico Perez");
+    }
+
+    public void initRowValueWithChevron() {
+
+        mRowValueLayoutWithChevron.setChevron();
+        mRowValueLayoutWithChevron.setHeader("Personal information");
+        mRowValueLayoutWithChevron.setTitle("Federico Perez");
     }
 }

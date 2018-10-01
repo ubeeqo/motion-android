@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layout_content"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/ink_light"
+    android:orientation="vertical">
 
     <com.phoenix.motion.parking.ParkingInfoLayout
-        android:layout_marginTop="@dimen/default_margin"
+        android:id="@+id/parking_info_component"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin" />
+
+    <com.phoenix.motion.parking.ParkingInfoLayout
+        android:id="@+id/parking_info_component_with_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin" />
 </LinearLayout>

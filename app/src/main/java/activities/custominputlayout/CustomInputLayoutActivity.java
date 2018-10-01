@@ -16,7 +16,19 @@ public class CustomInputLayoutActivity extends BaseActivity {
 
     //region BindViews
     @BindView(R.id.iwt_input)
-    CustomInputLayout mInputWithTag;
+    CustomInputLayout mCustomInput;
+
+    @BindView(R.id.iwt_input_with_suggestion)
+    CustomInputLayout mCustomInputWithSuggestion;
+
+    @BindView(R.id.iwt_input_error)
+    CustomInputLayout mCustomInputError;
+
+    @BindView(R.id.iwt_input_place_holder)
+    CustomInputLayout mCustomInputPlaceHOlder;
+
+    @BindView(R.id.iwt_input_without_tag)
+    CustomInputLayout mCustomInputWithoutTag;
     //endregion
 
     @Override
@@ -31,24 +43,20 @@ public class CustomInputLayoutActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mInputWithTag.setHeader("Input's tag");
-    }
+        mCustomInput.setHeader("Date");
+        mCustomInput.getInputText().setText("I'm over 18");
 
-    @OnClick(R.id.ll_container)
-    public void onClick() {
+        mCustomInputWithSuggestion.setHeader("Date");
+        mCustomInputWithSuggestion.getInputText().setText("I'm over 18");
+        mCustomInputWithSuggestion.setHelpMessage("you have to be over 18");
 
-        if (mInputWithTag.getInputText().getText().toString().toLowerCase().contains("e")) {
+        mCustomInputError.setHeader("Date");
+        mCustomInputError.getInputText().setText("16");
+        mCustomInputError.setError("you have to be over 18");
 
-            mInputWithTag.setError("You must fill this field");
-        } else if (mInputWithTag.getInputText().getText().toString().toLowerCase().contains("a")) {
+        mCustomInputPlaceHOlder.setHeader("Date");
+        mCustomInputPlaceHOlder.setHintEvInput("Introduce your age");
 
-            mInputWithTag.setHelpMessage("Remember you can't use a in this field");
-        } else if (mInputWithTag.getInputText().getText().toString().toLowerCase().contains("i")) {
-
-            mInputWithTag.hideError();
-        } else {
-
-            mInputWithTag.hideTexViewError();
-        }
+        mCustomInputWithoutTag.getInputText().setText("I'm over 18");
     }
 }

@@ -3,17 +3,20 @@ package activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.phoenix.R;
+import com.phoenix.motion.dialog.CustomAlertDialog;
+import com.phoenix.motion.dialog.NegativeButtonClickListener;
+import com.phoenix.motion.dialog.NeutralButtonClickListener;
+import com.phoenix.motion.dialog.PositiveButtonClickListener;
+import com.phoenix.motion.overlay.OverlayDialog;
 import com.phoenix.motion.rows.RowValueLayout;
 
 import activities.alertbox.AlertBoxActivity;
 import activities.base.BaseActivity;
 import activities.callus.CallUsActivity;
-import activities.dialog.CustomAlertDialogActivity;
 import activities.dialoginoutbox.DialogInputBoxActivity;
 import activities.disclaimer.DisclaimerActivity;
 import activities.divider.DividerActivity;
@@ -22,7 +25,6 @@ import activities.info.InfoActivity;
 import activities.custominputlayout.CustomInputLayoutActivity;
 import activities.licensephoto.LicensePhotoActivity;
 import activities.listoption.ListOptionActivity;
-import activities.overlay.OverlayActivity;
 import activities.parkinginfo.ParkingInfoActivity;
 import activities.paymentbutton.PaymentButtonActivity;
 import activities.roundlabel.RoundLabelActivity;
@@ -34,7 +36,9 @@ import activities.rows.RowValueActivity;
 import activities.selectorbutton.SelectorButtonActivity;
 import activities.status.StatusActivity;
 import activities.stepper.StepperActivity;
-import activities.succes.SuccesActivity;
+import activities.styles.ButtonStylesActivity;
+import activities.succes.SuccessActivity;
+import activities.styles.TextStylesActivity;
 import activities.unsuccess.UnSuccessActivity;
 import activities.waiting.WaitingActivity;
 import butterknife.BindView;
@@ -43,7 +47,11 @@ import model.ComponentModel;
 import utils.ComponentsUtils;
 
 
-public class DemoActivity extends BaseActivity implements View.OnClickListener {
+public class DemoActivity extends BaseActivity
+        implements View.OnClickListener,
+        PositiveButtonClickListener,
+        NeutralButtonClickListener,
+        NegativeButtonClickListener {
 
 
     private ComponentsUtils mComponentsUtils;
@@ -98,8 +106,7 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 2:
 
-                Intent intentCustomDialog = new Intent(this, CustomAlertDialogActivity.class);
-                startActivity(intentCustomDialog);
+                initDialogCustomAlertDialog();
                 break;
             case 3:
 
@@ -118,8 +125,7 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 6:
 
-                Intent intentOverlay = new Intent(this, OverlayActivity.class);
-                startActivity(intentOverlay);
+                initDialogOverlay();
                 break;
             case 7:
 
@@ -173,7 +179,7 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 17:
 
-                Intent intentSucces = new Intent(this, SuccesActivity.class);
+                Intent intentSucces = new Intent(this, SuccessActivity.class);
                 startActivity(intentSucces);
                 break;
             case 18:
@@ -216,6 +222,53 @@ public class DemoActivity extends BaseActivity implements View.OnClickListener {
                 Intent intentRoundLabel = new Intent(this, RoundLabelActivity.class);
                 startActivity(intentRoundLabel);
                 break;
+            case 26:
+
+                Intent intentTextStyles = new Intent(this, TextStylesActivity.class);
+                startActivity(intentTextStyles);
+                break;
+            case 27:
+
+                Intent intentButtonStyles = new Intent(this, ButtonStylesActivity.class);
+                startActivity(intentButtonStyles);
+                break;
         }
+    }
+
+    public void initDialogOverlay() {
+
+        OverlayDialog overlayDialog = new OverlayDialog(this);
+        overlayDialog.setTitle("We are still validating your license...");
+        overlayDialog.setMessage("Why? Our cars open by using your smartphone through this app, " +
+                "but in some cases there's poor connection on the parkings. " +
+                "On those case you can user a card.");
+        overlayDialog.show();
+    }
+
+    public void initDialogCustomAlertDialog() {
+
+        CustomAlertDialog customAlertDialog = new CustomAlertDialog(this);
+
+        customAlertDialog.setTitle("Check out times");
+        customAlertDialog.setMessage("Customer care working hours: Mon - Sat (8.00 to 23:00h CET)");
+        customAlertDialog.setPositiveButton("Cancel", this);
+        customAlertDialog.setNeutralButton("Neutral", this);
+        customAlertDialog.setNegativeButton("Accept", this);
+        customAlertDialog.show();
+    }
+
+    @Override
+    public void onNegativeButtonClickListener() {
+
+    }
+
+    @Override
+    public void onNeutralButtonClickListener() {
+
+    }
+
+    @Override
+    public void onPositiveButtonClickListener() {
+
     }
 }

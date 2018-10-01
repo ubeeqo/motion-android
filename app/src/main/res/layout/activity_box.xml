@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/ink_light"
+    android:orientation="vertical"
     android:padding="@dimen/default_margin">
 
     <com.phoenix.motion.alertbox.AlertBoxView
         android:id="@+id/alert_box_view_demo"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
     <com.phoenix.motion.dangerbox.DangerBoxView
         android:id="@+id/danger_box_view_demo"
-        android:layout_marginTop="@dimen/default_margin"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_margin" />
 
 </LinearLayout>

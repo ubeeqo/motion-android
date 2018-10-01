@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.info.InfoView;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
@@ -14,10 +15,8 @@ import butterknife.ButterKnife;
 public class InfoActivity extends BaseActivity {
 
     //region BindViews
-    @BindView(R.id.tv_info_title)
-    TextView mTvInfoTitle;
-    @BindView(R.id.tv_info_subtitle)
-    TextView mTvSubtitle;
+    @BindView(R.id.info_view_component)
+    InfoView mInfoView;
     //endregion
 
     @Override
@@ -32,7 +31,7 @@ public class InfoActivity extends BaseActivity {
 
     private void fillFields() {
 
-        mTvInfoTitle.setText("Oops! It looks like it is rush hour");
-        mTvSubtitle.setText("This is taking longer than expected. Thanks for your patience.");
+        mInfoView.setTitle("Oops! It looks like it is rush hour");
+        mInfoView.setSubtitle(R.string.info_view_component_subtitle);
     }
 }

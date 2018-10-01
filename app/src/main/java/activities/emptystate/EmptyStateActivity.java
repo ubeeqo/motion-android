@@ -8,21 +8,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.phoenix.R;
+import com.phoenix.motion.emptystate.EmptyStateView;
+import com.phoenix.motion.emptystate.OnEmptyStateActionClickListener;
 
 import activities.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class EmptyStateActivity extends BaseActivity {
+public class EmptyStateActivity extends BaseActivity implements OnEmptyStateActionClickListener {
 
     //region BindViews
-    @BindView(R.id.tv_message)
-    TextView mTvMessage;
-    @BindView(R.id.bt_action)
-    TextView mBtAction;
-    @BindView(R.id.iv_icon)
-    ImageView mIvIcon;
+    @BindView(R.id.empty_state_component)
+    EmptyStateView mEmptyStateView;
     //endregion
 
     @Override
@@ -37,15 +35,13 @@ public class EmptyStateActivity extends BaseActivity {
 
     public void fillFields() {
 
-        mTvMessage.setText("You don't have any booking right now");
-        mBtAction.setText("Book now");
-        mBtAction.setVisibility(View.VISIBLE);
-        mIvIcon.setBackgroundResource(R.drawable.ic_alert);
-        mIvIcon.setVisibility(View.VISIBLE);
+        mEmptyStateView.setIcon(R.drawable.ic_alert);
+        mEmptyStateView.setMessage("You don't have any booking right now");
+        mEmptyStateView.setAction("Book now",this);
     }
 
-    @OnClick(R.id.bt_action)
-    public void onClick() {
+    @Override
+    public void onActionClick() {
 
     }
 }
